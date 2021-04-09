@@ -1,3 +1,138 @@
+<<<<<<< HEAD
+header {
+        position: fixed;
+        box-shadow: 2px 2px 50px -30px gray;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 80px;
+        padding: 1rem;
+        color: white;
+        background: white;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #logo {
+        margin: 0 auto;
+        margin-left: 190px;
+        height: 44px;
+        width: 159px;
+        background-image: url("image/logo.png");
+    }
+    ul{
+        margin-right: 100px;
+    }
+    .ment{
+        color: #ffffff;
+        float: right;
+        font-size: 130px;
+        margin-right: 290px;
+        margin-top: 110px;
+        text-align: left;
+        line-height: 130px; 
+    }
+    #main {
+        padding-right : 30px;
+        padding-left: 30px;
+        margin: 0px auto;
+        width: 100%;
+        height: 100%;
+        padding-top: 3rem;
+    }
+
+    .main_center {
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 60px;
+        border: 3px solid red;
+        height: 706px;
+        border-radius: 30px;
+        background-color:#fcd121;
+        margin-top: 10px;
+    }
+
+    li {
+        list-style: none;
+        margin: auto;
+        float: right;
+        text-align: center;
+        margin-right: 27px;
+        margin-left: 27px;
+        font-size: 20px;
+    }
+
+    a:link {
+        color :#2E2E2E;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color :#2E2E2E;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color :#848484;
+        text-decoration: none;
+    }
+
+    a:active {
+        color :#848484;
+        text-decoration: none;
+    }
+
+    .study_img{
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 60px;
+        border: 3px solid blue;
+        height: 706px;
+        border-radius: 30px;
+    }
+
+    .timer_img{
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 60px;
+        border: 3px solid red;
+        height: 706px;
+        border-radius: 30px;
+    }
+
+    h1,p {
+      margin: 0;
+    }
+
+    body {
+        padding-top: 83px;
+        margin-top: 133px;
+        margin: 0px;
+        background: #ffffff;
+    }
+
+    body,html {
+        height: 100%;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+    footer{
+        height: 100px;
+        background: #2E2E2E;
+        }
+    /* 화면 너비 0 ~ 1200px */
+    @media (max-width: 1220px){
+    }
+    /* 화면 너비 0 ~ 768px */
+    @media (max-width: 768px){
+    }
+    /* 화면 너비 0 ~ 480px */
+    @media (max-width: 480px){
+    header {height: 133px;}
+=======
     header {
         position: fixed;
         border: 3px solid green;
@@ -15,8 +150,8 @@
     }
 
     #main {
-    	padding-right : 30px;
-    	padding-left: 30px;
+        padding-right : 30px;
+        padding-left: 30px;
         margin: 0px auto;
         border: 3px solid yellow;
         width: 100%;
@@ -44,46 +179,46 @@
         font-size: 20px;
     }
 
-	a:link {
-		color :#2E2E2E;
-		text-decoration: none;
-	}
+    a:link {
+        color :#2E2E2E;
+        text-decoration: none;
+    }
 
-	a:visited {
-		color :#2E2E2E;
-		text-decoration: none;
-	}
+    a:visited {
+        color :#2E2E2E;
+        text-decoration: none;
+    }
 
-	a:hover {
-		color :#848484;
-		text-decoration: none;
-	}
+    a:hover {
+        color :#848484;
+        text-decoration: none;
+    }
 
-	a:active {
-		color :#848484;
-		text-decoration: none;
-	}
+    a:active {
+        color :#848484;
+        text-decoration: none;
+    }
 
-	.study_img{
-		padding: 0px;
-		margin: 0px;
-		margin-bottom: 60px;
+    .study_img{
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 60px;
         border: 3px solid blue;
         height: 706px;
         border-radius: 30px;
-	}
+    }
 
-	.timer_img{
-		padding: 0px;
-		margin: 0px;
-		margin-bottom: 60px;
+    .timer_img{
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 60px;
         border: 3px solid red;
         height: 706px;
         border-radius: 30px;
-	}
+    }
 
-	h1,p {
-	  margin: 0;
+    h1,p {
+      margin: 0;
     }
 
     body {
@@ -101,16 +236,17 @@
         box-sizing: border-box;
     }
     footer{
-    	height: 100px;
-    	background: #2E2E2E;
-	    }
-	/* 화면 너비 0 ~ 1200px */
-	@media (max-width: 1220px){
-	}
-	/* 화면 너비 0 ~ 768px */
-	@media (max-width: 768px){
-	}
-	/* 화면 너비 0 ~ 480px */
-	@media (max-width: 480px){
-	header {height: 133px;}
-	}
+        height: 100px;
+        background: #2E2E2E;
+        }
+    /* 화면 너비 0 ~ 1200px */
+    @media (max-width: 1220px){
+    }
+    /* 화면 너비 0 ~ 768px */
+    @media (max-width: 768px){
+    }
+    /* 화면 너비 0 ~ 480px */
+    @media (max-width: 480px){
+    header {height: 133px;}
+>>>>>>> 732fd5d2d91ebc566412170274dd70c8f3a4d99d
+    }
