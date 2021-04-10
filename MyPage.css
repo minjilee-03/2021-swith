@@ -1,10 +1,10 @@
 header {
     position: fixed;
-    border: 3px solid green;
+    box-shadow: 2px 2px 50px -30px gray;
     top: 0;
     left: 0;
     right: 0;
-    height: 133px;
+    height: 100px;
     padding: 1rem;
     color: white;
     background: white;
@@ -12,17 +12,19 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 100;
 }
-#logo{
-    border: 3px solid red;
-    margin-left: 61px;
-    height: 60px;
-    width: 129px;
+header img {
+    margin: 0 auto;
+    margin-left: 190px;
+    width: 140px;
+}
+ul{
+    margin-right: 100px;
 }
 li {
     list-style: none;
     margin: auto;
-    border: 3px solid black;
     float: right;
     text-align: center;
     margin-right: 27px;
@@ -50,26 +52,161 @@ a:active {
     text-decoration: none;
 }
 #main{
-    border: 3px solid black;
+    background-color: #fff8db;
     border-radius: 40px;
-    height: 720px;
-    margin-top: 170px;
+    height: 100%;
+    min-height: 740px;
+    margin: 150px 70px;
 }
-.line{
+/* main_left */
+.main_left {
     margin: 0 auto;
-    margin-left: 150px;
-    width: 625px;
-    height: 720px;
-    border-right: 3px solid blue;
+    width: 500px;
+    height: 600px;
+    float: left;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-550px);
 }
 .profile{
-    border: 3px solid red;
+    background-color: lightgray;
+    border-radius: 500px;
     margin:0 auto;
-    padding-top: 100px;
+    margin-top: 100px;
     width: 350px;
     height: 350px;
 }
 #findbtn{
-    border: 3px solid red;
-    margin-left: 200px;
+    margin: 30px 160px;
+    width: 50%;
+}
+
+/* main_middle */
+#main_middle {
+    float: left;
+    height: 600px;
+    margin-top: 50px;
+    margin-right: 80px;
+    border-right: 1px solid gray;
+    position: absolute;
+        left: 50%;
+        transform: translateX(-20px);
+}
+
+/* main_right */
+.main_right {
+    float: left;
+    margin-top: 100px;
+    position: absolute;
+        left: 55%;
+}
+.main_right input {
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    font-size: 20px;
+}
+.main_right select {
+    height: 30px;
+    margin: 10px 5px 10px 0;
+    font-size: 17px;
+}
+input[type="button"] {
+    background-color: #fcd121;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 20px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+#save {
+    background-color: #0f0071;
+}
+#myword, #mystudy {
+    width: 100%;
+    margin: 5px 0;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+    background-color: #363636;
+    align-items: center;
+}
+footer img {
+    margin-top: 35px;
+    margin-left: 50px;
+}
+footer p {
+    color: white;
+    float: right;
+    margin-top: 35px;
+    margin-right: 50px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-x: hidden;
+}
+
+/* 화면 너비 0 ~ 1060px */
+@media (max-width: 1190px) {
+    #main_middle {
+        display: none;
+    }
+    .main_left {
+        margin-left: 0px;
+    }
+}
+@media (max-width: 1058px) {
+    #main_middle {
+        display: none;
+    }
+    .main_left {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-250px);
+    }
+    #main {
+        min-height: 1150px;
+    }
+    .main_right {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-200px);
+        margin-top: 600px;
+    }
+}
+/* 화면 너비 0 ~ 768px */
+@media (max-width: 768px){
+    .main_left {
+        margin-left: 0px;
+    }
+    #main_middle {
+        display: none;
+    }
+}
+/* 화면 너비 0 ~ 480px */
+@media (max-width: 600px){
+    header {
+        height: 133px;
+    }
+    .profile {
+        width: 250px;
+        height: 250px;
+    }
+    .main_right {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-150px);
+        margin-top: 600px;
+    }
 }

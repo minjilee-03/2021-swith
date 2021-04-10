@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    background: #252236;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    padding: 1rem 3rem 0 3rem;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main {
+    width: 40%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 300px;
+}
+.main h1 {
+    width: 100%;
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    word-spacing: -10px;
+    padding-bottom: 10px;
+}
+.main p {
+    width: 100%;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* 화면 너비 0 ~ 1200px */
+@media (max-width: 1220px){
+}
+/* 화면 너비 0 ~ 768px */
+@media (max-width: 768px){
+}
+/* 화면 너비 0 ~ 480px */
+@media (max-width: 480px){
+header {height: 133px;}
+}

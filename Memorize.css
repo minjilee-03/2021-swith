@@ -77,10 +77,12 @@ a {
 .title_left p {
     float: left;
     margin-left: 10px;
+    padding-top: 18px;
 }
 .title_left img {
     float: left;
     margin-left: 10px;
+    padding-top: 18px;
 }
 /* title_right */
 .title_right {
@@ -105,6 +107,7 @@ a {
     width: 80%;
     margin: 0 auto;
     color: gray;
+    margin-top: 20px;
 }
 summary {
     outline: none;
@@ -113,10 +116,10 @@ summary {
     margin: 0 auto;
 }
 .word {
-    width: 100%;
+    width: auto;
     height: auto;
     overflow: hidden;
-    margin-left: 40px;
+    margin: 0 30px;
 }
 .word div {
     width: 280px;
@@ -136,7 +139,7 @@ summary {
 footer {
     width: 100%;
     height: 100px;
-    margin-top: 50px;
+    margin-top: 100px;
     background-color: #363636;
     align-items: center;
 }
