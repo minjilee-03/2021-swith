@@ -39,14 +39,38 @@ header {
     text-align: center;
     margin-top: 20px;
 }
+.main img {
+    width: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-20px);
+    margin-top: 20px;
+}
 
 /* 화면 너비 0 ~ 1200px */
-@media (max-width: 1220px){
+@media (max-width: 1255px){
+    .main h1 {
+        font-size: 70px;
+    }
 }
-/* 화면 너비 0 ~ 768px */
-@media (max-width: 768px){
+@media (max-width: 847px){
+    .main h1 {
+        font-size: 50px;
+    }
+    .main p {
+        font-size: 21px;
+    }
 }
-/* 화면 너비 0 ~ 480px */
-@media (max-width: 480px){
-header {height: 133px;}
+@media (max-width: 576px){
+    .main h1 {
+        font-size: 40px;
+    }
+    .main p {
+        font-size: 18px;
+    }
+}
+@media (max-width: 447px){
+    .main h1 {
+        font-size: 30px;
+    }  
 }
