@@ -1,38 +1,62 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Swith</title>
+    <script src="index.js"></script>
     <link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet" <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div id="conteiner">
+    <main>
         <header style="z-index: 3;">
-            <a href="index.html"><div id="logo"></div></a>
-            <ul class="nav">
-                <li><a href="Login.html">MY PAGE</a></li>
-                <li><a href="">TIMER</a></li>
-                <li><a href="">STUDY</a></li>
-                <li><a href="">HOME</a></li>
-            </ul>
+            <a href="index.html">
+                <div id="logo" style="max-width: 1200px;"></div>
+                <nav>
+                    <ul>
+                        <li class="highlight"><a href="Login.html">MY PAGE</a></li>
+                        <li class="highlight"><a href="">TIMER</a></li>
+                        <li class="highlight"><a href="">STUDY</a></li>
+                        <li class="highlight"><a href="">HOME</a></li>
+                    </ul>
+                </nav>
         </header>
-        <div id="main">
-            <div class="main_center" style="position: relative; z-index: 1;">
-
-                <div class="card_image">
-                    <img src="image/computer.png" style="position: relative; z-index: 2; width: 700px; height: 612px; margin-left: 200px; margin-top: 90px;"/>
-
-                <h1 class ="ment"> STUDY<br/></h1>
-                <h1 class ="ment">WITH<br/></h1>
-                <h1 class ="ment">ME<br/></h1>
+        <section style="position: relative;">
+            <div class="container">
+                <div class="ment">
+                    <h1 class="cssanimation sequence leFlyInBottom">
+                        s-</h1>
+                    <h2 class="cssanimation sequence leFlyInBottom" style="color: #fcd121;">with</h2>
+                    <h3 class="cssanimation sequence leFlyInBottom">study with me</h3>
                 </div>
+                <svg class="pulse" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <circle id="Oval" cx="512" cy="512" r="512"></circle>
+                    <circle id="Oval" cx="512" cy="512" r="512"></circle>
+                    <circle id="Oval" cx="512" cy="512" r="512"></circle>
+                </svg>
+                <svg class="pulse2" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <circle id="Oval" cx="512" cy="512" r="512"></circle>
+                    <circle id="Oval" cx="512" cy="512" r="512"></circle>
+                    <circle id="Oval" cx="512" cy="512" r="512"></circle>
+                </svg>
+                <a href="#container2" class="scroll-down">
+                    <div class="mouse">
+                        <span></span>
+                    </div>
+                    <div class="arrow">
+                        <span></span>
+                    </div>
+                </a>
             </div>
-            <div class="study_img">
+            <div id="container2" style="position: absolute ; top: 35%;">
+                ss
             </div>
-            <div class="timer_img">
-            </div>
-        </div>
-    </div>
-    <footer>
-    </footer>
+        </section>
+    </main>
 </body>
+
 </html>
