@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    padding: 1rem;
+    background: white;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    box-shadow: 2px 2px 50px -30px gray;
+}
+.header img {
+    width: 140px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.nav {
+    width: 100%;
+}
+.nav li {
+    height: 58px;
+    list-style: none;
+    float: right;
+    text-align: center;
+    margin: 44px 27px 0 27px;
+    font-size: 25px;
+}
+a {
+    color: #2E2E2E;
+    text-decoration: none;
+}
+.nav li a:hover {
+    color: #848484;
+    text-decoration: none;
+}
+.header_line {
+    margin-top: -10px;
+    border: 0px;
+    background: gray;
+}
+
+/* main */
+.main{
+    width: 100%;
+    height: 100%;
+    min-height: 780px;
+    margin-top: 130px;
+}
+/* title */
+.title {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: #fcd121;
+    color: white;
+    vertical-align: bottom;
+}
+/* title_left */
+.title_left {
+    position: absolute;
+    bottom: 0;
+    margin: 30px;
+}
+.title_left h1 {
+    float: left;
+    margin-left: 50px;
+}
+.title_left p {
+    float: left;
+    margin-left: 10px;
+}
+.title_left img {
+    float: left;
+    margin-left: 10px;
+}
+/* title_right */
+.title_right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 90px 30px 0;
+}
+.title_right div {
+    float: left;
+    width: 80px;
+    height: 20px;
+    background-color: white;
+    color: #0f0071;
+    padding: 10px;
+    margin: 0 5px;
+    text-align: center;
+    border-radius: 8px;
+}
+/* set */
+.set {
+    width: 80%;
+    margin: 0 auto;
+    color: gray;
+}
+summary {
+    outline: none;
+    padding: 15px;
+    border-bottom: 1.5px solid lightgray;
+    margin: 0 auto;
+}
+.word {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-left: 40px;
+}
+.word div {
+    width: 280px;
+    height: 180px;
+    line-height: 180px;
+    float: left;
+    text-align: center;
+    margin: 20px;
+    border: 1.5px solid lightgray;
+    display: inline-block;
+    border-radius: 15px;
+    font-size: 23px;
+    color: black;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    background-color: #363636;
+    align-items: center;
+}
+footer img {
+    margin-top: 35px;
+    margin-left: 50px;
+}
+footer p {
+    color: white;
+    float: right;
+    margin-top: 35px;
+    margin-right: 50px;
+}
