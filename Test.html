@@ -5,14 +5,25 @@
     <link rel="stylesheet" href="Test.css" type="text/css"/>
 </head> 
 <body>
-    <header></header>
-    <section id="wrapper">
-        <div class="btn_wrap previous">
-            <div class="img_wrap" onclick=""> 
-                <img src="image/previous.png" id="btn_previous" />
-            </div> 
-        </div>
-        <div id="main_container">
+    <header style="z-index: 3;">
+            <a href="index.html">
+                <div id="logo" style="max-width: 1200px;"></div>
+                <nav>
+                    <ul>
+                        <li class="highlight"><a href="Login.html">MY PAGE</a></li>
+                        <li class="highlight"><a href="">TIMER</a></li>
+                        <li class="highlight"><a href="">STUDY</a></li>
+                        <li class="highlight"><a href="">HOME</a></li>
+                    </ul>
+                </nav>
+        </header>
+    <div class="section">
+        <div class="main_container">
+            <div class="btn_wrap previous">
+                <div class="img_wrap" onclick=""> 
+                    <img src="image/previous.png" id="btn_previous" />
+                </div> 
+            </div>
             <div id="main">
                 <div class="page-number">13/40</div>
                 <div class="text">apple</div>
@@ -24,13 +35,13 @@
                     <div class="answer item4" onclick="">토마토</div>
                 </div>
             </div>
-        </div>
-        <div class="btn_wrap next">
-            <div class="img_wrap" onclick="">
-                <img src="image/next.png" id="btn_next" />
+            <div class="btn_wrap next">
+                <div class="image_wrap" onclick="">
+                    <img src="image/next.png" id="btn_next" />
+                </div>
             </div>
         </div>
-    </section>
+    </div>
     <footer></footer>
 </body>
 </html>

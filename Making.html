@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>Swith</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Making.js"></script>
     <link rel="stylesheet" href="Making.css" type="text/css"> 
 </head>
 <body>
@@ -13,7 +15,7 @@
             <div class="put-title">
                 <input type="text" name="title" id="title" placeholder="제목을 입력하세요" />
             </div>
-        </div>
+        </div> 
     </header>
     <section>
         <div id="main_container">
@@ -67,11 +69,14 @@
                         <input type="text" name="voca" />
                         <input type="text" name="mean" />
                     </li>
+                    <form action="" method="POST">
+                        <div class="addInput"></div>
+                        <div class="making-test">
+                            <button type="button" class="add" value="+">+</button>
+                            <button type="button" class="minus" value="-">-</button>
+                        </div>
+                    </form>
                 </ul>
-                <div class="making-test">
-                    <div class="add" onclick="">+</div>
-                    <div class="minus" onclick="">-</div>
-                </div>
             </div>
             <div class="btn">
                 <button type="button" name="save_voca" id="save_btn">저장하기</button>

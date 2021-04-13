@@ -1,185 +1,276 @@
-body {
-    margin : 0;
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 0px;
     text-align: center;
 }
 
-section {
+nav {
+    max-width: 1200px;
+}
+
+header {
+    position: fixed;
+    box-shadow: 2px 2px 50px -30px gray;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    padding: 1rem;
+    color: white;
+    background: white;
+    font-weight: bold;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
 }
 
-.main_container {   
+#logo {
+    margin: 0 auto;
+    margin-left: 190px;
+    height: 44px;
+    width: 159px;
+    background-image: url("image/logo.png");
+}
+
+ul {
+    margin-right: 100px;
+}
+
+.main_container{
     display: flex;
-    justify-content: space-between; 
+    align-items: center;
+    justify-content: center;
+    margin-top:20vh;
 }
 
-@media (min-width:1024px) {
+li {
+    list-style: none;
+    margin: auto;
+    float: right;
+    text-align: center;
+    margin-right: 27px;
+    margin-left: 27px;
+    font-size: 20px;
+}
+
+a:link {
+    color: #2E2E2E;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #2E2E2E;
+    text-decoration: none;
+}
+
+li:hover {
+    color: #000000;
+    text-decoration: none;
+    box-shadow: inset 0 -10px 0 #fcd121;
+}
+
+li:active {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* 화면 너비 0 ~ 2560px */
+@media (max-width:2560px) {
     #main {
-        width : 1000px;
-        height : 600px;
+        width: 1000px;
+        height: 600px;
     }
 
     .page-number {
-        font-size : 30px;
+        font-size: 30px;
     }
 
     .text {
         font-size: 60px;
-        margin : 90px 0 100px 0;
+        margin: 90px 0 100px 0;
     }
 
     .line {
-            width: 980px;
+        width: 980px;
     }
 
-    .text-answer{
-        line-height:100px;
+    .text-answer {
+        line-height: 100px;
         font-size: 30px;
     }
 
     .answer {
         width: 450px;
         height: 100px;
-        margin : 0 10px 20px 10px;
+        margin: 0 10px 20px 10px;
     }
 
     .answer:hover {
         line-height: 90px;
+    }
+
+    .previous {
+        left : 450px;
+    }
+    
+    .next {
+        right : 450px;
     }
 
     img {
         width: 60px;
-        height: 50px;
-    }
-} 
-
-@media (max-width:1024px) and (min-width:767px){
-    #main {
-        width : 800px;
-        height : 600px;
-    }
-
-    .page-number {
-        font-size : 25px;
-    }
-
-    .text {
-        font-size: 50px;
-        margin : 90px 0 100px 0;
-    }
-
-    .line {
-         width : 750px;
-    }
-
-    .text-answer{
-        line-height:100px;
-        font-size: 30px;
-    }
-
-    .answer {
-        width: 340px;
-        height: 100px;
-        margin : 0 10px 20px 10px;
-    }
-
-    .answer:hover {
-        line-height: 90px;
-    }
-
-    img {
-        width: 50px;
-        height: 45px;
+        height: 60px;
     }
 }
 
-@media (max-width : 767px) and (min-width:480px){
+/* 화면 너비 0 ~ 1200px */
+@media (max-width:1220px) {
     #main {
-        width : 500px;
-        height : 350px;
+        width: 900px;
+        height: 600px;
     }
 
     .page-number {
-        font-size : 20px;
-    }
-
-    .text {
-        margin : 40px 0 45px 0;
         font-size: 30px;
     }
 
-    .text-answer{
-        line-height:50px;
-        font-size: 20px;
+    .text {
+        font-size: 60px;
+        margin: 90px 0 100px 0;
+    }
+
+    .line {
+        width: 880px;
+    }
+
+    .text-answer {
+        line-height: 90px;
+        font-size: 30px;
     }
 
     .answer {
-        width: 210px;
-        height: 50px;
-        margin-bottom: 15px;
-        margin-left:5px;
-        margin-right: 5px;
+        width: 400px;
+        height: 90px;
+        margin: 0 10px 20px 10px;
     }
 
     .answer:hover {
-        line-height: 40px;
+        line-height: 80px;
     }
 
-    .line {
-        width : 450px;
-    }
-
-    img {
-        width: 45px;
-        height: 40px;
-    }
-} 
-
-@media (max-width:480px) and (min-width:320px) {
-    #main {
-        width:250px;
-        height:300px;
-    }
-
-    .line {
-        width : 230px;
-        margin-bottom : 0;
-    }
-
-    .page-number {
-        font-size : 20px;
-    }
-
-    .text {
-        margin : 30px 0 30px 0;
-        font-size: 30px;
-    }
-
-    .text-answer{
-        line-height:50px;
-        font-size: 20px;
-    }
-
-    .answer {
-        width: 100px;
-        height: 50px;
-        margin-left:5px;
-        margin-right: 5px;
-        margin-bottom: 10px;
+    .previous {
+        left : 30px;
     }
     
-    .answer:hover {
-        line-height: 40px;
+    .next {
+        right : 30px;
     }
 
     img {
-        width: 45px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
     }
-}  
+}
+
+/* 화면 너비 0 ~ 768px */
+@media (max-width:768px) {
+    #main {
+        width: 600px;
+        height: 420px;
+    }
+
+    .page-number {
+        font-size: 20px;
+    }
+
+    .text {
+        font-size: 40px;
+        margin: 30px 0 55px 0;
+    }
+
+    .line {
+        width: 580px;
+    }
+
+    .text-answer {
+        line-height: 80px;
+        font-size: 25px;
+    }
+
+    .answer {
+        width: 240px;
+        height: 80px;
+        margin: 0 10px 20px 10px;
+    }
+
+    .answer:hover {
+        line-height: 70px;
+    }
+
+    .previous {
+        left : 20px;
+    }
+    
+    .next {
+        right : 20px;
+    }
+
+    img {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+/* 화면 너비 0 ~ 480px */
+@media (max-width : 480px) {
+    #main {
+        width: 400px;
+        height: 350px;
+    }
+
+    .page-number {
+        font-size: 20px;
+    }
+
+    .text {
+        margin: 25px 0 40px 0;
+        font-size: 30px;
+    }
+
+    .text-answer {
+        line-height: 60px;
+        font-size: 18px;
+    }
+
+    .answer {
+        width: 170px;
+        height: 60px;
+        margin-bottom: 15px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .answer:hover {
+        line-height: 50px;
+    }
+
+    .line {
+        width: 380px;
+    }
+
+    .previous {
+        left : 5px;
+    }
+    
+    .next {
+        right : 5px;
+    }
+    img {
+        width: 55px;
+        height: 50px;
+    }
+}
 
 
 #main {
@@ -188,11 +279,13 @@ section {
 }
 
 .line {
-    border-top: 1.5px solid #8f8f8f;
-    margin: auto;   
+    border: 1px solid #8f8f8f;
+    margin: auto;
+
 }
 
-.btn_wrap { 
+.btn_wrap {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,27 +297,27 @@ img {
 }
 
 .page-number {
-    margin-top : 20px;
-    font-weight:normal;
-    color:#8f8f8f;
+    margin-top: 20px;
+    font-weight: normal;
+    color: #8f8f8f;
 }
 
 .text-answer {
-    color:#8f8f8f;
+    color: #8f8f8f;
 }
 
 .answer {
     box-sizing: border-box;
     display: inline-flex;
     justify-content: center;
-    background-color:#fff7d5;
+    background-color: #fff7d5;
 }
 
 .item1 {
-    margin-top:25px;
+    margin-top: 25px;
 }
 
 .answer:hover {
     border: 5px solid #fcd121;
-    cursor:pointer;
+    cursor: pointer;
 }
