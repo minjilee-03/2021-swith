@@ -1,73 +1,178 @@
-    body{height: 100%}
+    body {
+        width: 100vw;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    input {
+        outline: none;
+        border: none;
+    }
     #main{
-        border: 3px solid red;
         margin: 0 auto;
         margin-top: 104px;
-        height: 720px;
+        height: 100vh;
         width: 410px;
+        position: relative;
     }
     .logo{
-        border: 3px solid blue;
         margin: 0 auto;
         margin-bottom: 45px;
         height: 99px;
         width: 329px;
     }
+    .logo img {
+        width: 100%;
+    }
     .text_field{
-        border: 3px solid green;
-        width: 410px;
-        height: 110px;
+        height: 170px;
         margin: 0 auto;
     }
     .text_field input {
-       border-radius: 10px;
-       margin: 0 auto;
+       border-radius: 8px;
        margin-bottom: 12px;
-       width: 410px;
+       width: 100%;
        height: 49px;
        font-size: 20px;
+       border: 1px solid gray;
    }
    .btn {
-       border: 3px solid blue;
-       padding-top: 42px;
-       width: 410px;
-       height: 110px;
+       height: 90px;
        margin: 0 auto;
    }
    .btn input{
-       border-radius: 10px;
-       border: 3px solid blue;
-       margin: 0 auto;
-       margin-bottom: 12px;
-       width: 410px;
-       height: 48px;
+       font-size: 20px;
+       border-radius: 8px;
+       width: 200px;
+       height: 55px;
+       background-color: #fcd121;
+       color: white;
+       position: absolute;
+       left: 50%;
+       transform: translateX(-100px);
    }
-   ul{
-    padding-top: 22px;
-    margin: 0 auto;
+   .forgot {
+        margin: 0 auto;
+        padding: 0;
    }
    li {
         list-style: none;
-        border: 3px solid black;
         text-align: center;
     }
+    a {
+        color: #0f0071;
+    }
     .btn2 {
-       border: 3px solid green;
-       width: 410px;
        height: 110px;
        margin: 0 auto;
        margin-top: 34px;
+       position: relative;
    }
    .btn2 input{
-       border-radius: 10px;
-       border: 3px solid green;
-       margin: 0 0 0 0px;
-       margin-bottom: 12px;
-       width: 410px;
-       height: 48px;
+        font-size: 20px;
+        border-radius: 8px;
+        background-color: gray;
+        color: white;
+        margin-bottom: 12px;
+        width: 400px;
+        height: 60px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-200px);
    }
+   .btn2 input:first-child {
+        background-image: url("image/google.png");
+        background-position:  97px 10px;
+        background-repeat: no-repeat;
+   }
+   .btn2 input:last-child {
+        top: 70px;
+        background-image: url('image/naver.png');
+        background-position:  100px 15px;
+        background-repeat: no-repeat;
+    }
    footer {
-       height: 100px;
-       margin: 0 auto;
-       background: #2E2E2E;
-   }
+        width: 100%;
+        background-color: #363636;
+        align-items: center;
+        clear: both;
+        height: 100px;
+    }
+    footer img {
+        margin-top: 35px;
+        margin-left: 50px;
+    }
+    footer p {
+        color: white;
+        float: right;
+        margin-top: 35px;
+        margin-right: 50px;
+    }
+
+    @media (min-width:1800px) {
+        #main {
+            width: 33%;
+            margin-top: 200px;
+        }
+        .text_field {
+            width: 600px;
+        }
+        .btn input {
+            width: 400px;
+            height: 90px;
+            font-size: 35px;
+            transform: translateX(-200px);
+        }
+        .btn2 {
+            height: 200px;
+        }
+        .btn2 input {
+            width: 600px;
+            height: 90px;
+            font-size: 35px;
+            left: 50%;
+            transform: translateX(-300px);
+        }
+        .btn2 input:first-child {
+            background-image: url('image/google.png');
+            background-position:  150px 25px;
+            background-repeat: no-repeat;
+        }
+        .btn2 input:last-child {
+            top: 105px;
+            background-image: url('image/naver.png');
+            background-position:  154px 29px;
+            background-repeat: no-repeat;
+        }
+        .text_field {
+            height: 240px;
+        }
+        .text_field input {
+            height: 80px;
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+        .forgot {
+            font-size: 30px;
+            padding: 0;
+            padding-top: 50px;
+            padding-bottom: 30px;
+        }
+        .forgot li:last-child {
+            word-spacing: -5px;
+        }
+        footer {
+            height: 130px;
+            font-size: 25px;
+        }
+        footer img {
+            margin-top: 45px;
+        }
+        footer p {
+            margin-top: 45px;
+        }
+    }
+    @media (max-width: 1958px) and (min-width: 1800px) {
+        .forgot li:last-child {
+            word-spacing: -14px;
+        }
+    }
