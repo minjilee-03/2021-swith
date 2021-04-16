@@ -5,6 +5,11 @@
     text-align: center;
 }
 
+html, body {
+    width:100%;
+    height:100%;
+}
+
 nav {
     max-width: 1200px;
 }
@@ -37,11 +42,11 @@ ul {
     margin-right: 100px;
 }
 
-.main_container{
-    display: flex;
+.main_container {
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    margin-top:20vh;
+    justify-content: center;    
+    margin-bottom:auto;
 }
 
 li {
@@ -77,67 +82,69 @@ li:active {
 
 /* 화면 너비 0 ~ 2560px */
 @media (max-width:2560px) {
+    .main_container {
+        margin-top: 25vh;
+    }
     #main {
-        width: 1000px;
-        height: 600px;
+        width: 1400px;
+        height: 800px;
     }
 
     .page-number {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .text {
-        font-size: 60px;
-        margin: 90px 0 100px 0;
+        font-size: 80px;
+        margin: 100px 0 110px 0;
     }
 
     .line {
-        width: 980px;
+        width: 1350px;
     }
 
     .text-answer {
-        line-height: 100px;
-        font-size: 30px;
+        margin-top: 25px;
+        line-height: 150px;
+        font-size: 40px;
     }
 
     .answer {
-        width: 450px;
-        height: 100px;
-        margin: 0 10px 20px 10px;
+        width: 650px;
+        height: 150px;
+        margin: 0 10px 40px 10px;
     }
 
     .answer:hover {
-        line-height: 90px;
-    }
-
-    .previous {
-        left : 450px;
-    }
-    
-    .next {
-        right : 450px;
+        border: 10px solid #fcd121;
+        line-height: 130px;
     }
 
     img {
-        width: 60px;
-        height: 60px;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 100px;
+        height: 100px;
     }
 }
 
-/* 화면 너비 0 ~ 1200px */
-@media (max-width:1220px) {
+/* 화면 너비 0 ~ 2000px */
+@media (max-width:2000px) {
+    .main_container {
+        margin-top: 20vh;
+    }
     #main {
         width: 900px;
-        height: 600px;
+        height: 500px;
     }
 
     .page-number {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .text {
-        font-size: 60px;
-        margin: 90px 0 100px 0;
+        font-size: 65px;
+        margin: 45px 0 70px 0;
     }
 
     .line {
@@ -145,36 +152,82 @@ li:active {
     }
 
     .text-answer {
-        line-height: 90px;
-        font-size: 30px;
+        margin-top: 15px;
+        line-height: 100px;
+        font-size: 35px;
     }
 
     .answer {
         width: 400px;
-        height: 90px;
-        margin: 0 10px 20px 10px;
+        height: 100px;
+        margin: 0 10px 10px 10px;
     }
 
     .answer:hover {
-        line-height: 80px;
-    }
-
-    .previous {
-        left : 30px;
-    }
-    
-    .next {
-        right : 30px;
+        border: 5px solid #fcd121;
+        line-height: 90px;
     }
 
     img {
+        margin-left: 20px;
+        margin-right: 20px;
         width: 60px;
         height: 60px;
     }
 }
 
+/* 화면 너비 0 ~ 1200px */
+@media (max-width:1220px) {
+    .main_container {
+        margin-top: 20vh;
+    }
+    #main {
+        width: 800px;
+        height: 530px;
+    }
+
+    .page-number {
+        font-size: 30px;
+    }
+
+    .text {
+        font-size: 60px;
+        margin: 60px 0 70px 0;
+    }
+
+    .line {
+        width: 780px;
+    }
+
+    .text-answer {
+        margin-top:30px;
+        line-height: 90px;
+        font-size: 30px;
+    }
+
+    .answer {
+        width: 350px;
+        height: 90px;
+        margin: 0 10px 20px 10px;
+    }
+
+    .answer:hover {
+        border: 5px solid #fcd121;
+        line-height: 80px;
+    }
+
+    img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
 /* 화면 너비 0 ~ 768px */
 @media (max-width:768px) {
+    .main_container {
+        margin-top: 20vh;
+    }
+
     #main {
         width: 600px;
         height: 420px;
@@ -205,15 +258,8 @@ li:active {
     }
 
     .answer:hover {
+        border: 5px solid #fcd121;
         line-height: 70px;
-    }
-
-    .previous {
-        left : 20px;
-    }
-    
-    .next {
-        right : 20px;
     }
 
     img {
@@ -224,9 +270,10 @@ li:active {
 
 /* 화면 너비 0 ~ 480px */
 @media (max-width : 480px) {
+    
     #main {
-        width: 400px;
-        height: 350px;
+        width: 300px;
+        height: 300px;
     }
 
     .page-number {
@@ -239,39 +286,41 @@ li:active {
     }
 
     .text-answer {
-        line-height: 60px;
-        font-size: 18px;
+        margin-top:10px;
+        line-height: 50px;
+        font-size: 16px;
     }
 
     .answer {
-        width: 170px;
-        height: 60px;
+        width: 130px;
+        height: 50px;
         margin-bottom: 15px;
         margin-left: 5px;
         margin-right: 5px;
     }
 
     .answer:hover {
-        line-height: 50px;
+        border: 5px solid #fcd121;
+        line-height: 40px;
     }
 
     .line {
-        width: 380px;
+        width: 280px;
     }
 
     .previous {
-        left : 5px;
+        left: 5px;
     }
-    
+
     .next {
-        right : 5px;
+        right: 5px;
     }
+
     img {
-        width: 55px;
+        width: 50px;
         height: 50px;
     }
 }
-
 
 #main {
     background-color: #ffeb9a;
@@ -279,7 +328,8 @@ li:active {
 }
 
 .line {
-    border: 1px solid #8f8f8f;
+    background-color:#8f8f8f;
+    height: 1px;
     margin: auto;
 
 }
@@ -313,11 +363,7 @@ img {
     background-color: #fff7d5;
 }
 
-.item1 {
-    margin-top: 25px;
-}
 
 .answer:hover {
-    border: 5px solid #fcd121;
     cursor: pointer;
 }
