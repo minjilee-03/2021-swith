@@ -6,32 +6,39 @@ $(document).ready (
             if (count < 10){
                 $('.voca_field .addInput').append (
                     '<li>\
-                    00'+ count++ + '\
-                    <input type="text" name="voca" /></li>'
+                    <span>00'+(count++)+'</span>\
+                    <input type="text" name="voca" />\
+                    </li>'
+                );
+                $('.mean_field .addInput').append (
+                    '<li><input type="text" name="mean" /></li>'
                 );
             }else if (count >= 10){
                 $('.voca_field .addInput').append (
                     '<li>\
-                    0'+ count++ + '\
-                    <input type="text" name="voca" /></li>'
+                    <span>0'+(count++)+'</span>\
+                    <input type="text" name="voca" />\
+                    </li>'
+                );
+                $('.mean_field .addInput').append (
+                    '<li><input type="text" name="mean" /></li>'
                 );
             }else{
                 $('.voca_field .addInput').append (
                     '<li>\
-                    '+ count++ + '\
-                    <input type="text" name="voca" /></li>'
+                    <span>'+(count++)+'</span>\
+                    <input type="text" name="voca" />\
+                    </li>'
                 );
-            } // 추가
-            
-            $('.mean_field .addInput').append (
-                '<li><input type="text" name="mean" /></li>'
-            );
-            
+                $('.mean_field .addInput').append (
+                    '<li><input type="text" name="mean" /></li>'
+                );
+            } // 추가   
         });
         $('.minus').click (function () {
             var removeLi1 = document.querySelectorAll(".voca_field li");
             var removeLi2 = document.querySelectorAll(".mean_field li");
-            if(count > 1){
+            if((count-1) > 1){ 
                 $(removeLi1).last().remove();
                 $(removeLi2).last().remove();
                 count--;
