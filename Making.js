@@ -26,15 +26,14 @@ $(document).ready (
             $('.mean_field .addInput').append (
                 '<li><input type="text" name="mean" /></li>'
             );
+            
         });
         $('.minus').click (function () {
-            var removeLi1 = document.querySelectorAll(".number_field li");
-            var removeLi2 = document.querySelectorAll(".voca_field li");
-            var removeLi3 = document.querySelectorAll(".mean_field li");
+            var removeLi1 = document.querySelectorAll(".voca_field li");
+            var removeLi2 = document.querySelectorAll(".mean_field li");
             if(count > 1){
                 $(removeLi1).last().remove();
                 $(removeLi2).last().remove();
-                $(removeLi3).last().remove();
                 count--;
             }
         }); // 제거
