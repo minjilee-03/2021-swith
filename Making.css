@@ -124,11 +124,11 @@ ul {
 @media (max-width:2000px) {
     .main {
         display: flex;
-        padding-top:100px;
+        padding-top:50px;
     }
 
     p {
-        font-size : 30px;
+        font-size : 25px;
     }
 
     span {
@@ -142,37 +142,37 @@ ul {
     }
 
     .voca_field input {
-        width : 500px;
+        width : 430px;
     }
 
     .mean_field input {
-        width : 35em;
+        width : 730px;
     }
 
     #save_btn {
-        bottom : 30px;
-        width: 250px;
-        height: 60px;
-        font-size: 25px;
+        bottom : 50px;
+        width: 180px;
+        height: 50px;
+        font-size: 20px;
     }
 
     .addMinus{
-        bottom: 50px;
-        left: 680px;
+        bottom: 45px;
+        left: 600px;
     }
 
     .add {
-        font-size:30px;
-        width:45px;
-	    height:45px;
-        line-height:45px;
+        font-size:25px;
+        width:30px;
+	    height:30px;
+        line-height:30px;
     }
 
     .minus {
-        font-size:30px;
-	    width:45px;
-	    height:45px;
-        line-height:45px;
+        font-size:25px;
+        width:30px;
+	    height:30px;
+        line-height:30px;
     }
 }
 
@@ -180,7 +180,7 @@ ul {
 @media (max-width:1220px) {
     .main {
         display: flex;
-        padding-top:100px;
+        padding-top:50px;
     }
 
     p {
@@ -202,7 +202,7 @@ ul {
     }
 
     .mean_field input {
-        width : 27em;
+        width : 500px;
     }
 
     #save_btn {
@@ -213,78 +213,79 @@ ul {
     }
 
     .addMinus{
-        bottom: 50px;
-        left: 480px;
+        bottom: 45px;
+        left: 400px;
     }
 
     .add {
-        font-size:30px;
-        width:45px;
-	    height:45px;
-        line-height:45px;
+        font-size:25px;
+        width:30px;
+	    height:30px;
+        line-height:30px;
     }
 
     .minus {
-        font-size:30px;
-	    width:45px;
-	    height:45px;
-        line-height:45px;
+        font-size:25px;
+        width:30px;
+	    height:30px;
+        line-height:30px;
     }
 }
 
 /* 화면 너비 0 ~ 768px */
-@media (max-width : 768px) { /* 수정 필요 미디어쿼리가 이상함 */
+@media (max-width : 768px) { 
     .main {
         display: flex;
-        padding-top:100px;
+        padding-top:50px;
     }
 
     p {
-        font-size : 20px;
+        font-size : 15px;
     }
 
     span {
-        font-size : 10px;
+        padding-right:3px;
+        font-size : 5px;
     }
 
     .voca_container input {
         font-size:20px;
         margin-bottom : 30px;
-        height: 1em;
+        height: 1.5em;
     }
 
     .voca_field input {
-        width : 150px;
+        width : 200px;
     }
 
     .mean_field input {
-        width : 200px;
+        width : 300px;
     }
 
     #save_btn {
         bottom : 30px;
-        width: 150px;
-        height: 50px;
-        font-size: 20px;
+        width: 130px;
+        height: 40px;
+        font-size: 15px;
     }
 
     .addMinus{
         bottom: 40px;
-        left: 280px;
+        left: 260px;
     }
 
     .add {
-        font-size:20px;
-        width:25px;
-	    height:25px;
-        line-height:25px;
+        font-size:15px;
+        width:20px;
+	    height:20px;
+        line-height:20px;
     }
 
     .minus {
-        font-size:20px;
-	    width:25px;
-	    height:25px;
-        line-height:25px;
+        font-size:15px;
+        width:20px;
+	    height:20px;
+        line-height:20px;
     }
 }
 
