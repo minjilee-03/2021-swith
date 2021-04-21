@@ -50,7 +50,6 @@
     margin-left: 190px;
     height: 44px;
     width: 159px;
-    background-image: url("image/logo.png");
   }
   
   ul {
@@ -626,6 +625,8 @@
       transform: translate(-30%, 70%);
       max-width:70rem;
     }
+
+    
     
     circle {
       fill: #fcd121;
@@ -668,6 +669,102 @@
       animation: pulse 3s 1.5s cubic-bezier(.5, .5, 0, 1);
       animation-iteration-count: infinite;
     }
+
+     
+  #container2 {
+    background: linear-gradient(173deg, #fcd121, #fcd121 22%, #fff8db 22%, #fff8db);
+  }
+   
+  #container2 {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 1000px;
+  }
+  @mixin center-v () {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  #study {
+    float: right;
+    font-size: 150px;
+    position: absolute;
+    top: 1010px;
+    right: 30px;
+    transform: rotate(6.5deg);
+    font-family: 'Nunito', sans-serif;
+    color: #fcd121;
+  }
+  study--primary {
+      @include center-v;
+      right: 20px;
+    }
+  #timer {
+    float: left;
+    font-size: 150px;
+    position: absolute;
+    top: 90px;
+    left: 30px;
+    transform: rotate(-6.5deg);
+    font-family: 'Nunito', sans-serif;
+    color: #fff8db;
+  }
+  #studyment {
+    float: right;
+    font-size: 60px;
+    position: absolute;
+    color: white;
+    top: 1410px;
+    right: 80px;
+    line-height: 70px;
+    text-align: right;
+    font-weight: 700;
+    font-family: 'LotteMartDream', sans-serif;
+    /*font-family: 'ImcreSoojin';
+    font-family: 'NanumSquare', sans-serif !important;*/
+  }
+  #studyment2 {
+    float: right;
+    font-size: 25px;
+    position: absolute;
+    color: white;
+    bottom: 200px;
+    right: 80px;
+    line-height: 40px;
+    text-align: right;
+    font-family: 'LotteMartDream', sans-serif;
+    /*font-family: 'ImcreSoojin';
+    font-family: 'NanumSquare', sans-serif !important;*/
+  }
+  #timerment {
+    float: left;
+    font-size: 60px;
+    position: absolute;
+    color: #0f0071;
+    top: 450px;
+    left: 60px;
+    line-height: 70px;
+    text-align: left;
+    font-weight: 700;
+    font-family: 'LotteMartDream', sans-serif;
+    /*font-family: 'ImcreSoojin';
+    font-family: 'NanumSquare', sans-serif !important;*/
+  }
+  #timerment2 {
+    float: left;
+    font-size: 25px;
+    position: absolute;
+    color: #0f0071;
+    top: 610px;
+    left: 60px;
+    line-height: 40px;
+    text-align: left;
+    font-family: 'LotteMartDream', sans-serif;
+    /*font-family: 'ImcreSoojin';
+    font-family: 'NanumSquare', sans-serif !important;*/
+  }
+  
     
     @keyframes pulse {
     

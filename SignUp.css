@@ -1,59 +1,66 @@
-body{height: 100%}
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
+input {
+  outline: none;
+  border: none;
+}
 #main{
   margin: 0 auto;
   padding: 0 0 60 60px;
-  height: 720px;
 }
 .header {
   display: flex;
   justify-content: space-between;
   padding-top: 39px;
+  height: 60px;
 }
 .sign_title {
-  margin : 0 0 0 0px;
-  margin-left: 85px;
+  margin: 0 auto;
+  height: 100%;
 }
-.logo {
+.sign_title img {
   width: 163px;
-  height: 60px;
-  margin-right: 90px;
-  border: 1px solid blue;
+  height: auto;
+  float: left;
+}
+.sign_title h1 {
+  float: left;
+  margin: 10px 0 0 20px;
 }
 .header_line {
-  width: 1740px;
-  margin-top: -10px;
+  width: 90%;
   border: 0px;
   height: 4px;
-  background: black;
+  background: gray;
 }
 .text_intro {
   font-size: 20px;
   text-align: center;
-  width: 512px;
-  height: 520px;
-  margin-left: 250px;
+  width: 43%;
   float: left;
-}
-.nav{
-  padding-top: 0 auto;
 }
 ul {
   padding-top: 0 auto;
-  margin-left: 322px;
   list-style: none;
+  float: right;
 }
 li {
   margin-bottom: 45px;
 }
 .height_line {
   top: 205px;
-  height: 350px;
-  border-left: 3px solid gray;
+  height: 360px;
+  border-left: 2px solid lightgray;
   margin-left: 50px;
   margin-right: 50px;
   float: left;
 }
 .main_container {
+  height: 85vh;
   width: 100%;
   float: right;
   align-content: center;
@@ -62,31 +69,134 @@ li {
 .text_field{
   margin: 0 auto;
   margin-top: 12px;
-  height: 100%;
   width: 100%;
+  font-size: 20px;
 }
 .text_field input {
-    margin-bottom: 25px;
+    margin-bottom: 27px;
     margin-top: 5px;
-    width: 383px;
+    width: 360px;
     height: 36px;
+    border: 1px solid gray;
+    font-size: 23px;
 }
-.text_field2 input {
-    margin-bottom: 20px;
-    width: 78px;
-    height: 36px;
+.text_field input:nth-child(n+9) { /* year input 부터 */
+  width: 70px;
+  margin-right: 5px;
 }
 .btn {
    width: 209px;
    height: 49px;
    margin: 0 auto;
-   margin-top: 71px;
    font-size: 20px;
+   margin-top: 50px;
 }
 .btn input{
    margin: 0 auto;
-   margin-top: 25px;
+   margin-top: 15px;
    width: 209px;
-   height: 49px;
-   font-size: 20px;
+   height: 60px;
+   font-size: 23px;
+   background-color: #fcd121;
+   border-radius: 8px;
+   color: white;
+}
+footer {
+  width: 100%;
+  background-color: #363636;
+  align-items: center;
+  clear: both;
+  height: 100px;
+}
+footer img {
+  margin-top: 35px;
+  margin-left: 50px;
+}
+footer p {
+  color: white;
+  float: right;
+  margin-top: 35px;
+  margin-right: 50px;
+}
+
+@media (min-width: 1800px) {
+  li {
+    margin-bottom: 53px;
+  }
+  .text_intro {
+    width: 43%;
+  }
+  .height_line {
+    height: 460px;
+  }
+  .text_intro {
+    font-size: 28px;
+  }
+  .text_field {
+    margin-top: 20px;
+    font-size: 28px;
+  }
+  .text_field input {
+    height: 50px;
+    font-size: 27px;
+    margin-bottom: 30px;
+  }
+  .btn {
+    width: 300px;
+    height: 80px;
+    margin-top: 80px;
+  }
+  .btn input {
+    width: 300px;
+    height: 80px;
+    font-size: 30px;
+  }
+  footer {
+    height: 130px;
+    font-size: 25px;
+  }
+  footer img {
+    margin-top: 45px;
+  }
+  footer p {
+    margin-top: 45px;
+  }
+}
+@media (max-width: 1200px) {
+  .text_intro {
+    width: 35%;
+  }
+}
+@media (max-width: 900px) {
+  .text_intro {
+    width: 28%;
+  }
+}
+@media (max-width: 700px) {
+  .text_intro {
+    font-size: 17px;
+    width: 31%;
+    text-align: right;
+  }
+  .height_line {
+    margin-right: 0;
+  }
+  .text_field {
+    font-size: 17px;
+  }
+  .text_field input {
+    margin-left: 30px;
+    width: 35%;
+    height: 31px;
+    font-size: 17px;
+  }
+  .text_field input:nth-child(n+9) { /* year input 부터 */
+    width: 40px;
+    margin-right: -5px;
+  }
+  .text_field input:nth-child(n+10) { /* year input 부터 */
+    width: 40px;
+    margin-left: 0px;
+    margin-right: -5px;
+  }
 }

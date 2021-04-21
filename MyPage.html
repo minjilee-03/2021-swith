@@ -12,22 +12,28 @@
 
 <body>
     <div id="container">
-        <header>
-            <a href="index.html"><img src="image/logo.png"></a>
-            <ul class="nav">
-                <li><a href="Login.html">MY PAGE</a></li>
-                <li><a href="">TIMER</a></li>
-                <li><a href="">STUDY</a></li>
-                <li><a href="">HOME</a></li>
-            </ul>
+        <header style="z-index: 3;">
+            <a href="index.html">
+                <div id="logo" style="max-width: 1200px;">
+                    <img src="image/logo.png">
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li class="highlight"><a href="Login.html">MY PAGE</a></li>
+                    <li class="highlight"><a href="timer.html">TIMER</a></li>
+                    <li class="highlight"><a href="Vocabulary.html">STUDY</a></li>
+                    <li class="highlight"><a href="index.html">HOME</a></li>
+                </ul>
+            </nav>
         </header>
         <div id="main">
             <div class="main_left">
                 <div class="profile">
                     <div id="image_container"></div>
                 </div>
-                <div id ="findbtn">
-                    <input type="file" id="image" accept="image/*" onchange="setThumbnail(event);"/>
+                <div id="findbtn">
+                    <input type="file" id="image" accept="image/*" onchange="setThumbnail(event);" />
                 </div>
             </div>
             <div id="main_middle"></div>
@@ -55,11 +61,12 @@
                 <br>
                 <input type="button" id="mystudy" value="내 공부 기록">
             </div>
-         </div>
-     </div>
-    <footer>
-        <img src="image/footer_logo.png">
-        <p>이민지/문진진/최지원/최가흔</p>
-    </footer>
+        </div>
+        <footer>
+            <img src="image/footer_logo.png">
+            <p>이민지/문진진/최지원/최가흔</p>
+        </footer>
+    </div>
 </body>
+
 </html>
