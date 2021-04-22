@@ -49,14 +49,6 @@ select {
     width: 500px;
     bottom: 2px solid black;
 }
-a {
-    text-decoration: none;
-    color: white;
-}
-.main p {
-    width: 100%;
-    font-size: 25px;
-
 .timerBox .time{
     font-size: 100pt;
     color: white;
@@ -68,33 +60,6 @@ a {
     margin: 20px auto;
     text-align: center;
 }
-#pause {
-    width: 50px;
-    height: 50px;
-    outline: none;
-    border: 0;
-    background-color: transparent;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-25px);
-    margin-top: 20px;
-    background-image: url("image/stop.png");
-    background-size: cover;
-}
-#save {
-    width: 180px;
-    height: 50px;
-    outline: none;
-    border: 0;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-90px);
-    margin-top: 80px;
-    font-size: 20px;
-    background-color: transparent;
-    color: white;
-    text-decoration: underline;
-    text-underline-position: under;
 .btnBox .fa{
     margin: 0px 5px;
     font-size: 20pt;
@@ -102,30 +67,7 @@ a {
     cursor: pointer;
 }
 
-
-@media (min-width: 1800px) {
-    * {
-        font-size: 33px;
-    }
-    .main {
-        padding-top: 400px;
-    }
-    .main p {
-        font-size: 33px;
-    }
-    #pause {
-        width: 70px;
-        height: 70px;
-        transform: translateX(-35px);
-        margin-top: 30px;
-    }
-    #save {
-        width: 200px;
-        font-size: 33px;
-        transform: translateX(-100px);
-        margin-top: 110px;
-    }
-}
+/* 화면 너비 0 ~ 1200px */
 @media (max-width: 1255px){
     .main h1 {
         font-size: 70px;
@@ -146,7 +88,6 @@ a {
     .main p {
         font-size: 18px;
     }
-}
 }
 @media (max-width: 447px){
     .main h1 {
