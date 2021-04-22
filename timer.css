@@ -32,6 +32,10 @@ header {
     word-spacing: -10px;
     padding-bottom: 10px;
 }
+a {
+    text-decoration: none;
+    color: white;
+}
 .main p {
     width: 100%;
     font-size: 25px;
@@ -39,15 +43,59 @@ header {
     text-align: center;
     margin-top: 20px;
 }
-.main img {
-    width: 40px;
+#pause {
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: 0;
+    background-color: transparent;
     position: absolute;
     left: 50%;
-    transform: translateX(-20px);
+    transform: translateX(-25px);
     margin-top: 20px;
+    background-image: url("image/stop.png");
+    background-size: cover;
+}
+#save {
+    width: 180px;
+    height: 50px;
+    outline: none;
+    border: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-90px);
+    margin-top: 80px;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    text-decoration: underline;
+    text-underline-position: under;
 }
 
-/* 화면 너비 0 ~ 1200px */
+
+@media (min-width: 1800px) {
+    * {
+        font-size: 33px;
+    }
+    .main {
+        padding-top: 400px;
+    }
+    .main p {
+        font-size: 33px;
+    }
+    #pause {
+        width: 70px;
+        height: 70px;
+        transform: translateX(-35px);
+        margin-top: 30px;
+    }
+    #save {
+        width: 200px;
+        font-size: 33px;
+        transform: translateX(-100px);
+        margin-top: 110px;
+    }
+}
 @media (max-width: 1255px){
     .main h1 {
         font-size: 70px;
@@ -68,9 +116,4 @@ header {
     .main p {
         font-size: 18px;
     }
-}
-@media (max-width: 447px){
-    .main h1 {
-        font-size: 30px;
-    }  
 }

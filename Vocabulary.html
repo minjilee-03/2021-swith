@@ -1,83 +1,83 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title>Swith</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<link rel="stylesheet" href="Vocabulary.css" type="text/css">
 	<script src="https://kit.fontawesome.com/8eb5905426.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 	<div id="container">
 		<header style="z-index: 3;">
-            <a href="index.html">
-                <div id="logo" style="max-width: 1200px;">
-                    <img src="image/logo.png">
-                </div>
-            </a>
-            <nav>
-                <ul>
-                    <li class="highlight"><a href="Login.html">MY PAGE</a></li>
-                    <li class="highlight"><a href="timer.html">TIMER</a></li>
-                    <li class="highlight"><a href="Vocabulary.html">STUDY</a></li>
-                    <li class="highlight"><a href="index.html">HOME</a></li>
-                </ul>
-            </nav>
-        </header>
+			<a href="index.html">
+				<div id="logo" style="max-width: 1200px;">
+					<img src="image/logo.png">
+				</div>
+			</a>
+			<nav>
+				<ul>
+					<li class="highlight"><a href="Login.html">MY PAGE</a></li>
+					<li class="highlight"><a href="timer.html">TIMER</a></li>
+					<li class="highlight"><a href="Vocabulary.html">STUDY</a></li>
+					<li class="highlight"><a href="index.html">HOME</a></li>
+				</ul>
+			</nav>
+		</header>
 		<hr class="header_line" />
 		<div class="main">
 			<div class="list">
 				<ul class="listul">
-			        <li class="group">
-			            <div class="title"><img src="image/folder.png"/>영어</div>
-			            <ul class="sub">
-			                <li><div style="float: left;"></div><a href="#">1단원</a></li>
-			                <li><div style="float: left;"></div><a href="#">2단원</a></li>
-			            </ul>
-			        </li>
-			        <li class="group">
-			            <div class="title"><img src="image/folder.png"/>한국사</div>
-			            <ul class="sub">
-			                <li><div style="float: left;"></div><a href="#">붕당정치</a></li>
-			                <li><div style="float: left;"></div><a href="#">동학농민운동</a></li>
-			                <li><div style="float: left;"></div><a href="#">대통령 선거</a></li>
-			            </ul>
-			        </li>       
-			    </ul>
-			    <p>+ 새로 만들기</p>
-			    <ul class="listul_two">
-			    	<li class="group">
-			            <div class="title"><img src="image/folder.png"/>일본어</div>
-			            <ul class="sub">
-			                <li><div style="float: left;"></div><a href="#">히라가나</a></li>
-			                <li><div style="float: left;"></div><a href="#">가타카나</a></li>
-			            </ul>
-			        </li>  
-			    </ul>
+					<li class="group">
+						<div class="title">
+							<a href="MakingVocabulary.html">
+								<img src="image/folder.png" />영어
+							</a>
+						</div>
+					</li>
+					<li class="group">
+						<div class="title">
+							<a href="#">
+								<img src="image/folder.png" />한국사
+							</a>
+						</div>
+					</li>
+				</ul>
+				<p id="new"><a href="Making.html">+새로 만들기</a></p>
+				<ul class="listul_two">
+					<li class="group">
+						<a href="#">
+							<div class="title"><img src="image/folder.png" />일본어</div>
+						</a>
+					</li>
+				</ul>
 			</div>
 			<div class="unit_list">
 				<div class="search">
-					<i class="fas fa-search"></i>
+					<button><i class="fas fa-search"></i></button>
 					<input type="text" name="search" placeholder="과목, 단원 등을 검색하세요">
 				</div>
 				<p id="voca_intro">최근 사용한 단어장</p>
 				<div class="unit_list_sub">
 					<li class="unit_list_sub_title">
 						<div></div>
-						1단원
+						<a href="Memorize.html">1단원</a>
 						<p>40카드</p>
 					</li>
 				</div>
 				<div class="unit_list_sub">
 					<li class="unit_list_sub_title">
 						<div></div>
-						붕당정치
+						<a href="Memorize.html">붕당정치</a>
 						<p>20카드</p>
 					</li>
 				</div>
 				<div class="unit_list_sub">
 					<li class="unit_list_sub_title">
 						<div></div>
-						대통령 선거
+						<a href="Memorize.html">대통령 선거</a>
 						<p>30카드</p>
 					</li>
 				</div>
@@ -89,4 +89,5 @@
 		</div>
 	</div>
 </body>
+
 </html>

@@ -1,84 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>Swith</title>
-    <link rel="stylesheet" href="Making.css" type="text/css"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Making.js"></script>
+    <link rel="stylesheet" href="Making.css" type="text/css">
 </head>
+
 <body>
     <header>
-        <div id="header-warpper">
-            <div class="back">
-                <a href="">&lt; 돌아가기</a>
+        <div id="header_container">
+            <div class="item1">
+                <a href="Memorize.html">&lt; 돌아가기</a>
             </div>
-            <div class="put-title">
+            <div class="item2">
                 <input type="text" name="title" id="title" placeholder="제목을 입력하세요" />
             </div>
         </div>
     </header>
-    <section>
-        <div id="main_container">
-            <div class="voca">
-                <ul class="text_field">
-                    <li>
-                        단어
-                    </li>
-                    <li>
-                        의미
-                    </li>
-                </ul>
-                <ul class="voca_making">
-                    <li>
-                        001
-                        <input type="text" name="voca" />
-                        <input type="text" name="mean" />
-                    </li>
-                    <li>
-                        002
-                        <input type="text" name="voca" />
-                        <input type="text" name="mean" />
-                    </li>
-                    <li>
-                        003
-                        <input type="text" name="voca" />
-                        <input type="text" name="mean" />
-                    </li>
-                    <li>
-                        004
-                        <input type="text" name="voca" />
-                        <input type="text" name="mean" />
-                    </li>
-                    <li>
-                        005
-                        <input type="text" name="voca" />
-                        <input type="text" name="mean" />
-                    </li>
-                    <li>
-                        006
-                        <input type="text" name="voca" />
-                        <input type="text" name="mean" />
-                    </li>
-                    <li>
-                        007
-                        <input type="text" name="voca" />
-                        <input type="text" name="mean" />
-                    </li>
-                    <li>
-                        008
-                        <input type="text" name="voca" />
-                        <input type="text" name="mean" />
-                    </li>
-                </ul>
-                <div class="making-test">
-                    <div class="add" onclick="">+</div>
-                    <div class="minus" onclick="">-</div>
+    <div class="main_container">
+        <div class="main">
+            <div class="voca_container">
+                <div class="voca_field">
+                    <ul>
+                        <p style="position:relative; left:40px">단어</p>
+                        <form action="" method="POST">
+                            <li>
+                                <span>001</span>
+                                <input type="text" name="voca" />
+                            </li>
+                            <li>
+                                <span>002</span>
+                                <input type="text" name="voca" />
+                            </li>
+                            <li>
+                                <span>003</span>
+                                <input type="text" name="voca" />
+                            </li>
+                            <li>
+                                <span>004</span>
+                                <input type="text" name="voca" />
+                            </li>
+                            <li>
+                                <span>005</span>
+                                <input type="text" name="voca" />
+                            </li>
+                            <li>
+                                <span>006</span>
+                                <input type="text" name="voca" />
+                            </li>
+                            <li>
+                                <span>007</span>
+                                <input type="text" name="voca" />
+                            </li>
+                            <li>
+                                <span>008</span>
+                                <input type="text" name="voca" />
+                            </li>
+                            <div class="addInput"></div>
+                        </form>
+                    </ul>
+                </div>
+                <div class="mean_field">
+                    <ul>
+                        <p>의미</p>
+                        <form action="" method="POST">
+                            <li><input type="text" name="mean" /></li>
+                            <li><input type="text" name="mean" /></li>
+                            <li><input type="text" name="mean" /></li>
+                            <li><input type="text" name="mean" /></li>
+                            <li><input type="text" name="mean" /></li>
+                            <li><input type="text" name="mean" /></li>
+                            <li><input type="text" name="mean" /></li>
+                            <li><input type="text" name="mean" /></li>
+                            <div class="addInput"></div>
+                        </form>
+                    </ul>
                 </div>
             </div>
-            <div class="btn">
-                <button type="button" name="save_voca" id="save_btn">저장하기</button>
-            </div>
         </div>
-    </section>
-    <footer></footer>
+        <div class="addMinus">
+            <button type="button" class="add" value="+">+</button>
+            <button type="button" class="minus" value="-">&#8211;</button>
+        </div>
+        <div class="btn">
+            <button type="button" name="save" id="save_btn">저장하기</button>
+        </div>
+    </div>
+
 </body>
+
 </html>

@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
 body {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   margin: 0;
   overflow-x: hidden;
 }
@@ -10,37 +12,39 @@ input {
 }
 #main{
   margin: 0 auto;
-  padding: 0 0 60 60px;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 .header {
   display: flex;
   justify-content: space-between;
-  padding-top: 39px;
-  height: 60px;
+  padding-top: 55px;
+  height: 135px;
 }
 .sign_title {
   margin: 0 auto;
   height: 100%;
 }
 .sign_title img {
-  width: 163px;
+  width: 200px;
   height: auto;
   float: left;
 }
 .sign_title h1 {
   float: left;
-  margin: 10px 0 0 20px;
+  font-size: 35px;
+  margin: 30px 0 0 20px;
+  cursor: pointer;
 }
 .header_line {
   width: 90%;
   border: 0px;
-  height: 4px;
+  height: 2px;
   background: gray;
 }
 .text_intro {
   font-size: 20px;
   text-align: center;
-  width: 43%;
+  width: 40%;
   float: left;
 }
 ul {
@@ -49,7 +53,7 @@ ul {
   float: right;
 }
 li {
-  margin-bottom: 45px;
+  margin-bottom: 49px;
 }
 .height_line {
   top: 205px;
@@ -60,11 +64,11 @@ li {
   float: left;
 }
 .main_container {
-  height: 85vh;
+  height: 100%;
   width: 100%;
   float: right;
   align-content: center;
-  margin-top: 100px;
+  margin-top: 70px;
 }
 .text_field{
   margin: 0 auto;
@@ -80,9 +84,11 @@ li {
     border: 1px solid gray;
     font-size: 23px;
 }
-.text_field input:nth-child(n+9) { /* year input 부터 */
-  width: 70px;
+select {
+  width: 90px;
+  height: 36px;
   margin-right: 5px;
+  margin-top: 5px;
 }
 .btn {
    width: 209px;
@@ -100,31 +106,15 @@ li {
    background-color: #fcd121;
    border-radius: 8px;
    color: white;
-}
-footer {
-  width: 100%;
-  background-color: #363636;
-  align-items: center;
-  clear: both;
-  height: 100px;
-}
-footer img {
-  margin-top: 35px;
-  margin-left: 50px;
-}
-footer p {
-  color: white;
-  float: right;
-  margin-top: 35px;
-  margin-right: 50px;
+   cursor: pointer;
 }
 
 @media (min-width: 1800px) {
   li {
-    margin-bottom: 53px;
+    margin-bottom: 59px;
   }
   .text_intro {
-    width: 43%;
+    width: 45%;
   }
   .height_line {
     height: 460px;
@@ -141,6 +131,10 @@ footer p {
     font-size: 27px;
     margin-bottom: 30px;
   }
+  .text_field select {
+    margin-top: 10px;
+    height: 50px;
+  }
   .btn {
     width: 300px;
     height: 80px;
@@ -150,16 +144,6 @@ footer p {
     width: 300px;
     height: 80px;
     font-size: 30px;
-  }
-  footer {
-    height: 130px;
-    font-size: 25px;
-  }
-  footer img {
-    margin-top: 45px;
-  }
-  footer p {
-    margin-top: 45px;
   }
 }
 @media (max-width: 1200px) {
@@ -190,13 +174,17 @@ footer p {
     height: 31px;
     font-size: 17px;
   }
-  .text_field input:nth-child(n+9) { /* year input 부터 */
+  .text_field input:nth-child(n+9) {
     width: 40px;
     margin-right: -5px;
   }
-  .text_field input:nth-child(n+10) { /* year input 부터 */
+  .text_field input:nth-child(n+10) {
     width: 40px;
     margin-left: 0px;
     margin-right: -5px;
+  }
+  .text_field select {
+    margin-top: 10px;
+    height: 31px;
   }
 }

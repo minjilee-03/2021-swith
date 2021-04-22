@@ -1,92 +1,91 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title>Swith</title>
 	<link rel="stylesheet" href="MakingVocabulary.css" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="MakingVocabulary.js"></script>
 </head>
+
 <body>
 	<div id="container">
 
 		<header style="z-index: 3;">
-            <a href="index.html">
-                <div id="logo" style="max-width: 1200px;">
-                    <img src="image/logo.png">
-                </div>
-            </a>
+			<a href="index.html">
+				<div id="logo" style="max-width: 1200px;">
+					<img src="image/logo.png">
+				</div>
+			</a>
 
-            <nav>
-                <ul>
-                    <li class="highlight"><a href="Login.html">MY PAGE</a></li>
-                    <li class="highlight"><a href="timer.html">TIMER</a></li>
-                    <li class="highlight"><a href="Vocabulary.html">STUDY</a></li>
-                    <li class="highlight"><a href="index.html">HOME</a></li>
-                </ul>
-            </nav>
+			<nav>
+				<ul>
+					<li class="highlight"><a href="Login.html">MY PAGE</a></li>
+					<li class="highlight"><a href="timer.html">TIMER</a></li>
+					<li class="highlight"><a href="Vocabulary.html">STUDY</a></li>
+					<li class="highlight"><a href="index.html">HOME</a></li>
+				</ul>
+			</nav>
 
-        </header>
+		</header>
 
 		<div class="main">
 			<div class="list">
 
 				<ul class="listul">
 
-			        <li class="group">
-			            <div class="title" style="color: #fcd121;"><img src="image/folder.png"/>영어</div>
-			            <ul class="sub">
-			                <li><div style="float: left;"></div><a href="#">1단원</a></li>
-			                <li><div style="float: left;"></div><a href="#">2단원</a></li>
-			            </ul>
-			        </li>
+					<li class="group">
+						<div class="title"><img src="image/folder.png" />영어</div>
+						<ul class="sub">
+							<li>
+								<div style="float: left;"></div><a href="Memorize.html">1단원</a>
+							</li>
+							<li>
+								<div style="float: left;"></div><a href="Memorize.html">2단원</a>
+							</li>
+						</ul>
+					</li>
 
-			        <li class="group">
-			            <div class="title"><img src="image/folder.png"/>한국사</div>
+					<li class="group">
+						<div class="title"><img src="image/folder.png" />한국사</div>
+					</li>
+				</ul>
 
-			            <ul class="sub">
-			                <li><div style="float: left;"></div><a href="#">붕당정치</a></li>
-			                <li><div style="float: left;"></div><a href="#">동학농민운동</a></li>
-			                <li><div style="float: left;"></div><a href="#">대통령 선거</a></li>
-			            </ul>
-
-			        </li>       
-			    </ul>
-
-			    <ul class="list_edit_ul">
-			    	<li><img src="image/edit.png"></li>
-			    	<li><img src="image/add.png"></li>
-			    	<li><img src="image/up.png"></li>
-			    	<li><img src="image/down.png"></li>
-			    	<li><img src="image/delete.png"></li>
-			    </ul>
+				<ul class="list_edit_ul">
+					<li><img src="image/add.png"></li>
+				</ul>
 
 			</div>
 
 			<div class="unit_list">
-
-				<ul class="unit_list_ul">
-
-					<div class="unit_list_sub">
+				<div class="unit_list_sub">
+					<a href="Memorize.html">
 						<li>1단원</li>
+					</a>
+					<ul class="unit_list_sub_ul">
+						<li><img src="image/modify.png"></li>
+						<li><img src="image/share.png"></li>
+						<li class="trash"><img src="image/trash.png"></li>
+					</ul>
+				</div>
 
-						<ul class="unit_list_sub_ul">
-							<li><img src="image/modify.png"></li>
-							<li><img src="image/share.png"></li>
-							<li><img src="image/trash.png"></li>
-						</ul>
-
-					</div>
-
-					<div class="unit_list_sub">
+				<div class="unit_list_sub">
+					<a href="Memorize.html">
 						<li>2단원</li>
-						<ul class="unit_list_sub_ul">
-							<li><img src="image/modify.png"></li>
-							<li><img src="image/share.png"></li>
-							<li><img src="image/trash.png"></li>
-						</ul>
-					</div>
+					</a>
+					<ul class="unit_list_sub_ul">
+						<li><img src="image/modify.png"></li>
+						<li><img src="image/share.png"></li>
+						<li class="trash"><img src="image/trash.png"></li>
+					</ul>
+				</div>
 
-					<li class="unit_list_ul_last">+<br/>추가하기</li>
-				</ul>
+				<a href="Making.html" style="color: #C4C4C4;">
+					<li class="unit_list_ul_last">+<br />
+						추가하기
+					</li>
+				</a>
 			</div>
 		</div>
 		<footer>
@@ -94,4 +93,5 @@
 			<p>이민지/문진진/최지원/최가흔</p>
 		</footer>
 </body>
+
 </html>
