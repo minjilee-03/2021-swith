@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="utf-8">
     <title>Swith</title>
     <link rel="stylesheet" href="timer.css" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="timer.js"></script>
 </head>
-
 <body>
     <div id="container">
         <header>
@@ -21,8 +21,25 @@
             <p>총 공부시간 03 : 54 : 23</p>
             <button id="pause"></button>
             <button id="save">기록하기</button>
+            <p><span style="font-size: 25px;"></span><a href="index.html"> < Home</p></a>
+            <select>
+                <option subject>subject  ▽</option>
+                <option>국어 </option>
+                <option>영어</option>
+                <option>수학</option>
+            </select>
+        </header>
+        <div id='box' class="box">
+            <div id='timerBox' class="timerBox">
+                <div id="time" class="time">00:00:00</div>
+                <hr>
+            </div>
+            <div class="btnBox">
+                <i id="startbtn" class="fa fa-play" aria-hidden="true"></i>
+                <i id="pausebtn" class="fa fa-pause" aria-hidden="true"></i>
+                <i id="stopbtn" class="fa fa-stop" aria-hidden="true"></i>
+            </div>
         </div>
     </div>
 </body>
-
 </html>
