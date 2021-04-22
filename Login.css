@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
     body {
         width: 100vw;
         margin: 0;
         overflow-x: hidden;
+        font-family: 'Nanum Gothic', sans-serif;
     }
     input {
         outline: none;
@@ -10,7 +13,7 @@
     #main{
         margin: 0 auto;
         margin-top: 104px;
-        height: 100vh;
+        height: 100%;
         width: 410px;
         position: relative;
     }
@@ -24,6 +27,7 @@
         width: 100%;
     }
     .text_field{
+        width: 90%;
         height: 170px;
         margin: 0 auto;
     }
@@ -34,6 +38,9 @@
        height: 49px;
        font-size: 20px;
        border: 1px solid gray;
+       font-family: 'Nanum Gothic', sans-serif;
+       padding-left: 10px;
+       margin-left: -8px;
    }
    .btn {
        height: 90px;
@@ -49,14 +56,17 @@
        position: absolute;
        left: 50%;
        transform: translateX(-100px);
+       font-family: 'Nanum Gothic', sans-serif;
    }
    .forgot {
         margin: 0 auto;
         padding: 0;
+        padding-bottom: 20px;
    }
    li {
         list-style: none;
         text-align: center;
+        margin-bottom: 5px;
     }
     a {
         color: #0f0071;
@@ -78,6 +88,7 @@
         position: absolute;
         left: 50%;
         transform: translateX(-200px);
+        font-family: 'Nanum Gothic', sans-serif;
    }
    .btn2 input:first-child {
         background-image: url("image/google.png");
@@ -89,23 +100,6 @@
         background-image: url('image/naver.png');
         background-position:  100px 15px;
         background-repeat: no-repeat;
-    }
-   footer {
-        width: 100%;
-        background-color: #363636;
-        align-items: center;
-        clear: both;
-        height: 100px;
-    }
-    footer img {
-        margin-top: 35px;
-        margin-left: 50px;
-    }
-    footer p {
-        color: white;
-        float: right;
-        margin-top: 35px;
-        margin-right: 50px;
     }
 
     @media (min-width:1800px) {
@@ -124,6 +118,7 @@
         }
         .btn2 {
             height: 200px;
+            margin-top: 50px;
         }
         .btn2 input {
             width: 600px;
@@ -157,18 +152,11 @@
             padding-top: 50px;
             padding-bottom: 30px;
         }
+        li {
+            margin-bottom: 10px;
+        }
         .forgot li:last-child {
             word-spacing: -5px;
-        }
-        footer {
-            height: 130px;
-            font-size: 25px;
-        }
-        footer img {
-            margin-top: 45px;
-        }
-        footer p {
-            margin-top: 45px;
         }
     }
     @media (max-width: 1958px) and (min-width: 1800px) {

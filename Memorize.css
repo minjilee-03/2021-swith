@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
 * {
     margin: 0 auto;
 }
@@ -30,7 +32,7 @@ header {
     margin: 0 auto;
     margin-left: 190px;
     height: 44px;
-    width: 159px;
+    width: 110px;
     box-sizing: border-box;
 }
 
@@ -73,10 +75,11 @@ header li:active {
 
 /* main */
 .main{
+    font-family: 'Nanum Gothic', sans-serif;
     width: 100%;
-    height: 100%;
-    min-height: 745px;
-    margin-top: 80px;
+    height: auto;
+    overflow: auto;
+    min-height: 100vh;
 }
 /* title */
 .title {
@@ -86,16 +89,21 @@ header li:active {
     background-color: #fcd121;
     color: white;
     vertical-align: bottom;
+    padding-top: 80px;
 }
 /* title_left */
 .title_left {
     position: absolute;
+    width: 50%;
     bottom: 0;
     margin: 30px;
 }
 .title_left h1 {
     float: left;
     margin-left: 50px;
+}
+.title_left a {
+    color: white;
 }
 .title_left p {
     float: left;
@@ -110,6 +118,7 @@ header li:active {
 /* title_right */
 .title_right {
     position: absolute;
+    width: 220px;
     bottom: 0;
     right: 0;
     margin: 0 90px 30px 0;
@@ -131,6 +140,8 @@ header li:active {
     margin: 0 auto;
     color: gray;
     margin-top: 20px;
+    height: auto;
+    overflow: hidden;
 }
 summary {
     outline: none;
@@ -143,28 +154,41 @@ summary {
     height: auto;
     overflow: hidden;
     margin: 0 30px;
+    display: inline-block;
 }
-.word div {
-    width: 280px;
+.card {
+    width: 270px;
     height: 180px;
     line-height: 180px;
-    float: left;
     text-align: center;
     margin: 20px;
-    border: 1.5px solid lightgray;
     display: inline-block;
+    position: relative;
+}
+.voca, .mean {
+    width: 100%;
+    height: 100%;
+    line-height: 180px;
+    text-align: center;
+    border: 1.5px solid lightgray;
     border-radius: 15px;
     font-size: 23px;
     color: black;
+    cursor: pointer;
+    position: absolute;
+}
+.mean {
+    background-color: #fcd121;
+    color: white;
 }
 
 /* footer */
 footer {
     width: 100%;
     height: 100px;
-    margin-top: 100px;
     background-color: #363636;
     align-items: center;
+    bottom: 0;
 }
 footer img {
     margin-top: 35px;
@@ -177,6 +201,49 @@ footer p {
     margin-right: 50px;
 }
 
+@media (min-width: 1840px) {
+    .main {
+        height: auto;
+        overflow: auto;
+    }
+    /* title_left */
+    .title_left h1 {
+        float: left;
+        margin-left: 50px;
+        font-size: 41px;
+    }
+    .title_left p {
+        padding-top: 20px;
+        font-size: 25px;
+    }
+    .title_left img {
+        margin-left: 10px;
+        padding-top: 23px;
+        width: 25px;
+    }
+    /* title_right */
+    .title_right {
+        margin: 0 110px 30px 0;
+        width: 320px;
+    }
+    .title_right div {
+        width: 120px;
+        height: 35px;
+        padding: 10px;
+        margin: 0 10px;
+        font-size: 25px;
+    }
+    .set {
+        font-size: 30px;
+    }
+    .word div {
+        width: 350px;
+        height: 200px;
+        line-height: 190px;
+        margin: 20px;
+        font-size: 30px;
+    }
+}
 
 @media (max-width: 770px){
     header {

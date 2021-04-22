@@ -1,52 +1,86 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title>Swith</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="Memorize.js" type="text/javascript"></script>
 	<link rel="stylesheet" type="text/css" href="Memorize.css">
 </head>
+
 <body>
 	<div id="container">
 		<header style="z-index: 3;">
-            <a href="index.html">
-                <div id="logo" style="max-width: 1200px;">
-                    <img src="image/logo.png">
-                </div>
-            </a>
-            <nav>
-                <ul>
-                    <li class="highlight"><a href="Login.html">MY PAGE</a></li>
-                    <li class="highlight"><a href="timer.html">TIMER</a></li>
-                    <li class="highlight"><a href="Vocabulary.html">STUDY</a></li>
-                    <li class="highlight"><a href="index.html">HOME</a></li>
-                </ul>
-            </nav>
-        </header>
+			<a href="index.html">
+				<div id="logo" style="max-width: 1200px;">
+					<img src="image/logo.png">
+				</div>
+			</a>
+			<nav>
+				<ul>
+					<li class="highlight"><a href="Login.html">MY PAGE</a></li>
+					<li class="highlight"><a href="timer.html">TIMER</a></li>
+					<li class="highlight"><a href="Vocabulary.html">STUDY</a></li>
+					<li class="highlight"><a href="index.html">HOME</a></li>
+				</ul>
+			</nav>
+		</header>
 		<div class="main">
 			<div class="title">
 				<div class="title_left">
 					<h1>1단원</h1>
 					<p>40카드 | 최가흔</p>
-					<img src="image/share.png">
-					<p>공유하기</p>
+					<a href="#"><img src="image/share.png"></a>
+					<a href="#">
+						<p>공유하기</p>
+					</a>
 				</div>
 				<div class="title_right">
-					<div>카드게임</div>
-					<div>테스트</div>
-				</div>				
+					<a href="#">
+						<div>카드게임</div>
+					</a>
+					<a href="#">
+						<div>테스트</div>
+					</a>
+				</div>
 			</div>
 			<div class="set">
 				<details>
 					<summary>1세트</summary>
 					<div class="word">
-						<div style="background-color: #fcd121; color: white;">사과</div>
-						<div>banana</div>
-						<div>cat</div>
-						<div>dragon</div>
-						<div>egg</div>
-						<div>fire</div>
-						<div>green</div>
-						<div>horse</div>
+						<div class="card">
+							<div class="voca">apple</div>
+							<div class="mean">사과</div>
+						</div>
+						<div class="card">
+							<div class="voca">banana</div>
+							<div class="mean">바나나</div>
+						</div>
+						<div class="card">
+							<div class="voca">cat</div>
+							<div class="mean">고양이</div>
+						</div>
+						<div class="card">
+							<div class="voca">dragon</div>
+							<div class="mean">드래곤</div>
+						</div>
+						<div class="card">
+							<div class="voca">egg</div>
+							<div class="mean">달걀</div>
+						</div>
+						<div class="card">
+							<div class="voca">fire</div>
+							<div class="mean">불</div>
+						</div>
+						<div class="card">
+							<div class="voca">green</div>
+							<div class="mean">녹색</div>
+						</div>
+						<div class="card">
+							<div class="voca">horse</div>
+							<div class="mean">말</div>
+						</div>
 					</div>
 				</details>
 				<details>
@@ -69,4 +103,5 @@
 		</footer>
 	</div>
 </body>
+
 </html>
