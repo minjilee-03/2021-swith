@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'Gosanja';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/Gosanja.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 0px;
+  }
+  
+  nav {
+    max-width: 1200px;
+  }
+  
+  header {
+    position: fixed;
+    box-shadow: 2px 2px 50px -30px gray;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    padding: 1rem;
+    color: white;
+    background: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #logo {
+    margin: 0 auto;
+    margin-left: 190px;
+    height: 44px;
+    width: 110px;
+    background-image: url("image/logo.png");
+  }
+  
+  ul {
+    margin-right: 100px;
+  }
+  
+  #main {
+    margin: 0px auto;
+    width: 100%;
+  }
+  
+  li {
+    list-style: none;
+    margin: auto;
+    float: right;
+    text-align: center;
+    margin-right: 27px;
+    margin-left: 27px;
+    font-size: 20px;
+  }
+  
+  a:link {
+    color: #2E2E2E;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: #2E2E2E;
+    text-decoration: none;
+  }
+  
+  li:hover {
+    color: #000000;
+    text-decoration: none;
+    box-shadow: inset 0 -10px 0  #fcd121; 
+  }
+  
+  li:active {
+    color: #000000;
+    text-decoration: none;
+  }
+      
+  body {
+    padding-top: 80px;
+    margin-top: 130px;
+    margin: 0px;
+    background: #ffffff;
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .box {
+  
+  }
+  
+  .box::-webkit-scrollbar {
+    display: none;
+  }
+table{
+    margin-top: 65px;
+    background-color: #fff8db;
+    border-radius: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 100px;
+}
+td{
+    border: 2px solid #969696;
+    vertical-align: top;
+    width: 130px;
+    height: 90px;
+    text-align: right;
+    font-size: 20px;
+    font-family: 'Gosanja';
+}
+.day{
+    vertical-align: middle;
+    text-align: center;
+    color:  #0f0071;
+    font-size: 25px;
+    font-weight: 50px;
+    height: 55px;
+    font-family: 'Gosanja';
+    border: 2px solid #969696;
+}
+#tbCalendarYM{
+    color: #0f0071;
+    border: 0px;
+    font-size: 50px;
+    font-family: 'Gosanja';
+    vertical-align:bottom;
+    text-align: center;
+}
+.arrow{
+    border: 0px;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 10px;
+}
+section{
+  padding-top: 20px;
+  width: 1027px;
+  height: auto;
+  background-color: #fff8db;
+  border-radius: 30px;
+}
+#today{
+  color: #0f0071;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Gosanja';
+  margin-bottom: 10px;
+}
+#date{
+  height: 4px;
+  width: 930px;
+  background: #969696;
+}
+#box1{
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 30px;
+}
+#container1{
+  float: left;
+}
+#container2{
+  float: right;
+}
+.record{
+  border: 2px solid #969696;
+  text-align: left;
+  width: 450px;
+  padding-top: 10px;
+  border-radius: 15px;
+  height: 70px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+#subject{
+  padding-top: 6px;
+  font-size: 24px;
+  color:  #969696;
+  text-align: left;
+}
+.circle{
+  float: left;
+  margin-right: 14px;
+  background-color:#969696;
+  border-radius: 100px;
+  width: 45px;
+  height: 45px;
+}
+/* footer */
+footer {
+  width: 100%;
+  height: 100px;
+  margin-top: 100px;
+  background-color: #363636;
+  align-items: center;
+}
+footer img {
+  margin-top: 35px;
+  margin-left: 50px;
+}
+footer p {
+  color: white;
+  float: right;
+  margin-top: 35px;
+  margin-right: 50px;
+}
