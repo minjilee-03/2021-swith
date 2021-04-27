@@ -45,11 +45,11 @@
     align-items: center;
   }
   
-  #logo {
+  #logo img {
     margin: 0 auto;
     margin-left: 190px;
     height: 44px;
-    width: 110px;
+    width: 133px;
   }
   
   ul {

@@ -9,7 +9,6 @@
 }
 nav {
     max-width: 1200px;
-    box-sizing: border-box;
 }
 
 header {
@@ -32,13 +31,16 @@ header {
     margin: 0 auto;
     margin-left: 190px;
     height: 44px;
-    width: 159px;
+    width: 133px;
     box-sizing: border-box;
+}
+
+ul {
+    margin-right: 100px;
 }
 
 header ul {
     margin-right: 100px;
-    box-sizing: border-box;
 }
 
 .highlight {
@@ -49,7 +51,6 @@ header ul {
     margin-right: 27px;
     margin-left: 27px;
     font-size: 20px;
-    box-sizing: border-box;
 }
 a {
     color: black;
