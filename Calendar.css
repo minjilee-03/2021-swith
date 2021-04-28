@@ -96,7 +96,7 @@
   .box::-webkit-scrollbar {
     display: none;
   }
-table{
+#calendar{
     margin-top: 65px;
     background-color: #fff8db;
     border-radius: 30px;
@@ -105,14 +105,18 @@ table{
     padding-bottom: 50px;
     margin-bottom: 100px;
 }
+#calendar2{
+  margin: 0 auto;
+  width: 150px;
+}
 td{
-    border: 2px solid #969696;
-    vertical-align: top;
-    width: 130px;
-    height: 90px;
-    text-align: right;
-    font-size: 20px;
-    font-family: 'Gosanja';
+  border: 2px solid #969696;
+  vertical-align: top;
+  width: 130px;
+  height: 90px;
+  text-align: right;
+  font-size: 20px;
+  font-family: 'Gosanja';
 }
 .day{
     vertical-align: middle;
@@ -145,7 +149,7 @@ section{
   background-color: #fff8db;
   border-radius: 30px;
 }
-#today{
+#tbCalendarMD{
   color: #0f0071;
   text-align: center;
   font-size: 30px;
