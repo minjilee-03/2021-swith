@@ -166,6 +166,13 @@ section{
   padding-right: 50px;
   margin-top: 30px;
 }
+.time_record{
+  text-align: right;
+  width: auto;
+  margin: 0;
+  width: 150px;
+  float: right;
+}
 #container1{
   float: left;
 }
@@ -176,26 +183,30 @@ section{
   border: 2px solid #969696;
   text-align: left;
   width: 450px;
-  padding-top: 10px;
   border-radius: 15px;
   height: 70px;
   padding-right: 20px;
   padding-left: 20px;
   margin-bottom: 20px;
+  padding-top: 20px;
+}
+.one{
+  width: 150px;
+  float: left;
 }
 #subject{
-  padding-top: 6px;
   font-size: 24px;
   color:  #969696;
   text-align: left;
+  width: auto;
 }
 .circle{
   float: left;
   margin-right: 14px;
   background-color:#969696;
   border-radius: 100px;
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
 }
 /* footer */
 footer {
