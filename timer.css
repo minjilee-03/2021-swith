@@ -92,30 +92,7 @@ a {
     cursor: pointer;
 }
 
-
-@media (min-width: 1800px) {
-    * {
-        font-size: 33px;
-    }
-    .main {
-        padding-top: 400px;
-    }
-    .main p {
-        font-size: 33px;
-    }
-    #pause {
-        width: 70px;
-        height: 70px;
-        transform: translateX(-35px);
-        margin-top: 30px;
-    }
-    #save {
-        width: 200px;
-        font-size: 33px;
-        transform: translateX(-100px);
-        margin-top: 110px;
-    }
-}
+/* 화면 너비 0 ~ 1200px */
 @media (max-width: 1255px){
     .main h1 {
         font-size: 70px;
