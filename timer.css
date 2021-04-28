@@ -34,17 +34,6 @@ a {
     text-decoration:none;
     color: white;
 } 
-select {
-    margin-top: 25px;
-    font-size: 15px;
-    width: 150px; /* 원하는 너비설정 */
-    height: 40px;
-    padding: .8em .5em; /* 여백으로 높이 설정 */
-    border-radius: 0px; /* iOS 둥근모서리 제거 */
-    -webkit-appearance: none; /* 네이티브 외형 감추기 */
-    -moz-appearance: none;
-    appearance: none;
-}
 .timerBox{
     width: 500px;
     bottom: 2px solid black;
@@ -56,7 +45,7 @@ a {
 .main p {
     width: 100%;
     font-size: 25px;
-
+}
 .timerBox .time{
     font-size: 100pt;
     color: white;
@@ -95,6 +84,7 @@ a {
     color: white;
     text-decoration: underline;
     text-underline-position: under;
+}
 .btnBox .fa{
     margin: 0px 5px;
     font-size: 20pt;
@@ -146,7 +136,6 @@ a {
     .main p {
         font-size: 18px;
     }
-}
 }
 @media (max-width: 447px){
     .main h1 {

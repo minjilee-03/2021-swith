@@ -2,73 +2,88 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
     <title>Swith</title>
     <script src="Calendar.js"></script>
+    <script type="text/javascript" src="timer.js"></script>
     <link rel="stylesheet" href="Calendar.css" type="text/css">
 
 </head>
+
 <body>
-<container>
-    <header style="z-index: 3;">
-        <a href="index.html">
-            <div id="logo" style="max-width: 1200px;"> 
+    <container>
+        <header style="z-index: 3;">
+            <a href="index.html">
+                <div id="logo" style="max-width: 1200px;">
+                </div>
+                <nav>
+                    <ul>
+                        <li class="highlight"><a href="Login.html">MY PAGE</a></li>
+                        <li class="highlight"><a href="timer.html">TIMER</a></li>
+                        <li class="highlight"><a href="Vocabulary.html">STUDY</a></li>
+                        <li class="highlight"><a href="Index.html">HOME</a></li>
+                    </ul>
+                </nav>
+        </header>
+
+        <table id="calendar" align="center">
+            <tr>
+                <td class="arrow"><label onclick="prevCalendar()"><img src="image/arrow_left.png"></label></td>
+                <td align="center" id="tbCalendarYM" colspan="5">
+                    yyyy년 m월</td>
+                <td class="arrow"><label onclick="nextCalendar()"><img src="image/arrow_right.png">
+                    </label></td>
+            </tr>
+            <tr>
+                <td class="day" align="center">SUN</td>
+                <td class="day" align="center">Mon</td>
+                <td class="day" align="center">Tue</td>
+                <td class="day" align="center">Wed</td>
+                <td class="day" align="center">Thu</td>
+                <td class="day" align="center">Fri</td>
+                <td class="day" align="center">Sat</td>
+            </tr>
+        </table>
+
+        <section style="overflow: auto;">
+
+            <table id="calendar2">
+                <th id="tbCalendarMD" colspan="7">
+                    m월 dd일</th>
+            </table>
+            <hr id="date">
+            <div id="box1">
+                <div id="container1">
+                    <div class="record">
+                        <h1 class=time_record>00:00:00</h1>
+                        <div class="one">
+                            <div class="circle"></div>
+                            <h1 id="subject">수학</h1>
+                        </div>
+                    </div>
+                </div>
+                <div id="container2">
+                    <div class="record">
+                        <h1 class=time_record>00:00:00</h1>
+                        <div class="one">
+                            <div class="circle"></div>
+                            <h1 id="subject">영어</h1>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <nav>
-                <ul>
-                    <li class="highlight"><a href="Login.html">MY PAGE</a></li>
-                    <li class="highlight"><a href="timer.html">TIMER</a></li>
-                    <li class="highlight"><a href="Vocabulary.html">STUDY</a></li>
-                    <li class="highlight"><a href="Index.html">HOME</a></li>
-                </ul>
-            </nav>
-    </header>
+        </section>
 
-<table id="calendar" align="center">
-    <tr>
-        <td class="arrow"><label onclick="prevCalendar()"><img src="image/arrow_left.png"></label></td>
-        <td align="center" id="tbCalendarYM" colspan="5">
-        yyyy년 m월</td>
-        <td class="arrow"><label onclick="nextCalendar()"><img src="image/arrow_right.png">            
-        </label></td>
-    </tr>
-    <tr>
-        <td class="day" align="center">SUN</td>
-        <td class="day"align="center">Mon</td>
-        <td class="day"align="center">Tue</td>
-        <td class="day"align="center">Wed</td>
-        <td class="day"align="center">Thu</td>
-        <td class="day"align="center">Fri</td>
-        <td class="day"align="center">Sat</td>
-    </tr> 
-</table>
+    </container>
 
-<section style="overflow: auto;">  
-  <h1 id="today">4월 22일</h1>
-  <hr id="date">
-  <div id ="box1">
-    <div id="container1">
-        <div class="record">
-            <div class="circle"></div><h1 id="subject">수학</h1>
-        </div>
-    </div>
-    <div id="container2">
-        <div class="record">
-            <div class="circle"></div><h1 id="subject">영어</h1>
-        </div>
-    </div>
-</div>
-</section>
+    <footer>
+        <img src="image/footer_logo.png">
+        <p>이민지/문진진/최지원/최가흔</p>
+    </footer>
 
-</container>
-
-<footer>
-    <img src="image/footer_logo.png">
-    <p>이민지/문진진/최지원/최가흔</p>
-</footer>
-
-<script language="javascript" type="text/javascript">
-    buildCalendar();//
-</script>
+    <script language="javascript" type="text/javascript">
+        buildCalendar();//
+    </script>
 </body>
 
 </html>

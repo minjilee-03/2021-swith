@@ -32,11 +32,12 @@
 				</ul>
 			</div>
 			<div class="height_line"></div>
-			<form name="text_field" class="text_field" method="POST" action="index.html">
-				<input type="text" name="id" /><br />
-				<input type="password" name="pw" /><br />
-				<input type="password" name="pw_re" /><br />
-				<input type="text" name="name" /><br />
+			<form name="text_field" class="text_field" method="POST"
+				action="http://localhost/2021-swith/2021-swith/SignUp.php">
+				<input type="text" name="id" id="id" /><br />
+				<input type="password" name="pw" id="pw" /><br />
+				<input type="password" name="pw_re" id="pw_re" /><br />
+				<input type="text" name="name" id="name" /><br />
 
 				<select id="year">
 					<option>선택하세요</option>
@@ -49,7 +50,7 @@
 				</select>일
 			</form>
 			<div class="btn">
-				<a href="index.html"><input type="submit" name="btn_sign_up" value="회원가입"></a>
+				<input type="submit" id="signupButton" value="회원가입">
 			</div>
 		</div>
 </body>
