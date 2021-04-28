@@ -11,7 +11,6 @@ function prevCalendar() {//이전 달
  today = new Date(today.getFullYear(), today.getMonth() - 1, today.getDate());
  buildCalendar(); //달력 cell 만들어 출력 
 }
-
 function nextCalendar() {//다음 달
     // 다음 달을 today에 값을 저장하고 달력에 today 넣어줌
     //today.getFullYear() 현재 년도//today.getMonth() 월  //today.getDate() 일 
@@ -37,6 +36,9 @@ function buildCalendar(){//현재 달 달력 만들기
     //innerHTML : js 언어를 HTML의 권장 표준 언어로 바꾼다
     //new를 찍지 않아서 month는 +1을 더해줘야 한다. 
      tbCalendarYM.innerHTML = today.getFullYear() + "년 " + (today.getMonth() + 1) + "월"; 
+
+     var tbCalendarMD = document.getElementById("tbCalendarMD");
+     tbCalendarMD.innerHTML = (today.getMonth() + 1) + "월" + today.getDate() + "일 " ; 
 
      /*while은 이번달이 끝나면 다음달로 넘겨주는 역할*/
     while (tbCalendar.rows.length > 2) {
