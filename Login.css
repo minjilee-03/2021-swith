@@ -90,6 +90,7 @@
         left: 50%;
         transform: translateX(-200px);
         font-family: 'Nanum Gothic', sans-serif;
+        cursor: pointer;
    }
    .btn2 input:first-child {
         background-image: url("image/google.png");

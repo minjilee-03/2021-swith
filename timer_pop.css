@@ -1,0 +1,45 @@
+body{
+    width: 300px;
+    height: 300px;
+    overflow-x:hidden;  
+    overflow-y:hidden;
+    display: block; 
+    background-color: #FAED7D;
+}
+.btn{
+    border: none;
+    margin-left: 10px;
+    width: 120px;
+    height: 40px;
+    color: white;
+    background-color: #252236;
+}
+#sub{
+    margin-left: 10px;
+    width: 250px;
+    height: 40px;
+    margin-bottom: 30px;
+}
+#ment{
+    margin-left: 10px;
+    color: #252236;
+}
+.alltime_ment{
+    font-size: 23px;
+    text-align: center;
+    margin-right: 10px;
+    color: #0f0071;
+}
+#alltime{
+    font-size: 23px;
+    text-align: center;
+    margin-right: 10px;
+    color: #0f0071;
+}
+.lap-button{
+    border: none;
+    margin-left: 10px;
+    width: 120px;
+    height: 40px;
+    background-color: #FAED7D;
+}
