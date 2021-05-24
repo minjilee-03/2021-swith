@@ -12,12 +12,10 @@
     <header>
         <div id="header_container">
             <div class="item1">
-                <button onclick="history.back()">&lt; 돌아가기</button>
+                <a href="#">&lt; 돌아가기</a>
             </div>
             <div class="item2">
-                <input type="text" name="title" id="title" placeholder="제목을 입력하세요"
-                    onfocus="$('.basic').show(); $('.addMinus').css('top', ($('.basic_input').offset().top)+20); "
-                    autofocus />
+                <input type="text" name="title" id="title" placeholder="제목을 입력하세요" onfocus="$('.basic').show();" autofocus />
             </div>
         </div>
     </header>
@@ -29,22 +27,20 @@
                         <div class="voca">
                             <form action="./Making.php" method="POST">
                                 <ul style="display:block;" class="list">
-                                    <li>
-                                        <!-- 읽기 전용으로 만들어서 나머지 li태그와 균형을 맞춘다. -->
+                                    <li> <!-- 읽기 전용으로 만들어서 나머지 li태그와 균형을 맞춘다. -->
                                         <span>&emsp;&nbsp;</span> <!-- 3칸 공백 + 1칸 공백을 삽입하여 밑에 input태그의 위치를 맞춰준다. -->
-                                        <input type="text" value="단어" class="hidden_text" readonly>
+                                        <input type="text" value="단어" class="hidden_text" readonly> 
                                         <input type="text" value="의미" class="hidden_text" readonly>
                                     </li>
-                                    <li>
-                                        <!-- input태그를 클릭할 시 모든 li태그의 하위 태그인 .addMinus를 숨기고, 해당 input태그의 부모인 div를 찾아 보여준다. -->
+                                    <li> <!-- input태그를 클릭할 시 모든 li태그의 하위 태그인 .addMinus를 숨기고, 해당 input태그의 부모인 div를 찾아 보여준다. -->
                                         <span class="num">001</span>
                                         <input type="text" name="voca" class="basic_input"
                                             onfocus="$('.addMinus').hide(); $(this).parent().find('div').show();" />
                                         <input type="text" name="mean"
                                             onfocus="$('.addMinus').hide(); $(this).parent().find('div').show();" />
-                                        <div class="addMinus basic">
-                                            <button type="button" class="add basicbtn1" value="+">+</button>
-                                            <button type="button" class="minus basicbtn2" value="-">&#8211;</button>
+                                        <div class="addMinus basic" >
+                                            <button type="button" class="add" value="+">+</button>
+                                            <button type="button" class="minus" value="-">&#8211;</button>
                                         </div>
                                     </li>
                                     <li>
@@ -140,3 +136,5 @@
         </div>
     </div>
 </body>
+
+</html>
