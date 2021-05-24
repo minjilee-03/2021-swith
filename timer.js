@@ -1,8 +1,23 @@
 var time = 0;
 var starFlag = true;
+
+var nowth;
+var nowtm;
+var nowts;
+
+
+
 $(document).ready(function(){
   buttonEvt();
 });
+
+function showPopup() { 
+  var popupWidth = 300; 
+  var popupHeight = 300; 
+  var popX = (window.screen.width / 2) - (popupWidth / 2); 
+  var popY= (window.screen.height / 2) - (popupHeight / 2); 
+  window.open("timer_pop.html", "timer_pop", 'status=no, height=' + popupHeight + ', width=' + popupWidth + ', left='+ popX + ', top='+ popY);
+}
 
 function init(){
   document.getElementById("time").innerHTML = "00:00:00";
@@ -46,10 +61,14 @@ function buttonEvt(){
         if(ts < 10){
         ts = "0" + sec;
         }
-
         document.getElementById("time").innerHTML = th + ":" + tm + ":" + ts;
       }, 1000);
     }
+  });
+  $("#startbtn").hover(function() {
+    $(this).css("color", "white");
+  }, function(){
+    $(".fa").css("color","#FAED7D")
   });
 
   // pause btn
@@ -62,6 +81,12 @@ function buttonEvt(){
     }
   });
 
+  $("#pausebtn").hover(function() {
+    $(this).css("color", "white");
+  }, function(){
+    $(".fa").css("color","#FAED7D")
+  });
+
   // stop btn
   $("#stopbtn").click(function(){
     if(time != 0){
@@ -71,6 +96,33 @@ function buttonEvt(){
       starFlag = true;
       time = 0;
       init();
+      document.getElementById("alltime").innerHTML = th + ":" + tm + ":" + ts;
     }
   });
-}
+
+  // stop btn
+  $("#pen").click(function(){
+    clearInterval(timer);
+    starFlag = true;
+    var li = document.createElement('li')
+    li.style.color = "#fff"
+    li.innerText = hour + ' : ' + min + ' : ' + sec
+    nowth = hour
+    nowtm = min
+    nowts = sec
+    showPopup();
+  });
+
+  $("#stopbtn").hover(function() {
+    $(this).css("color", "white");
+  }, function(){
+    $(".fa").css("color","#FAED7D")
+  });
+
+  $("#pen").hover(function() {
+    $(this).css("color", "white");
+  }, function(){
+    $(".fa").css("color","#FAED7D")
+  });
+  
+  }

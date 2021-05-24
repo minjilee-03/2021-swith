@@ -109,6 +109,10 @@ body {
 margin: 0 auto;
 width: 150px;
 }
+#calendar2{
+  margin: 0 auto;
+  width: 150px;
+}
 td{
 border: 2px solid #969696;
 vertical-align: top;
@@ -172,6 +176,13 @@ width: auto;
 margin: 0;
 width: 150px;
 float: right;
+}
+.time_record{
+  text-align: right;
+  width: auto;
+  margin: 0;
+  width: 150px;
+  float: right;
 }
 #container1{
 float: left;
