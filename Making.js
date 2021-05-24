@@ -36,4 +36,3 @@ $(document).on("click", '.minus', function () { // .minus 버튼을 누르면 �
 $(document).on("focus", 'input:not([class="hidden_text"])', function (){
     $('.addMinus').css('top', ($(this).offset().top)+20);
 }); // input 태그의 y좌표값 + 20을 .addMinus 태그의 css에 적용한다. (단, hidden_text를 클래스로 가진 input은 제외한다)
-

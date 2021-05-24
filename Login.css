@@ -57,6 +57,7 @@
        left: 50%;
        transform: translateX(-100px);
        font-family: 'Nanum Gothic', sans-serif;
+       cursor: pointer;
    }
    .forgot {
         margin: 0 auto;
