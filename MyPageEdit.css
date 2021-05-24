@@ -74,7 +74,7 @@ header li:active {
 #main{
     background-color: #fff8db;
     border-radius: 40px;
-    height: 85vh;
+    height: 80vh;
     min-height: 740px;
     margin: 150px 70px;
     font-family: 'Nanum Gothic', sans-serif;
@@ -116,6 +116,7 @@ header li:active {
 
 /* main_right */
 .main_right {
+    width: 24%;
     float: left;
     margin-top: 100px;
     position: absolute;
@@ -132,6 +133,10 @@ header li:active {
     margin: 10px 5px 10px 0;
     font-size: 17px;
 }
+.main_right p {
+    font-size: 20px;
+    margin-top: 10px;
+}
 input[type="button"] {
     background-color: #fcd121;
     outline: none;
@@ -142,7 +147,7 @@ input[type="button"] {
     height: 40px;
     margin-bottom: 15px;
 }
-#save {
+#save, #edit {
     background-color: #0f0071;
     cursor: pointer;
 }
@@ -231,6 +236,7 @@ footer {
         min-height: 1150px;
     }
     .main_right {
+        width: 42%;
         position: absolute;
         left: 50%;
         transform: translateX(-200px);

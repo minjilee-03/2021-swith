@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="MyPageEdit.css" type="text/css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="profile.js" type="text/javascript"></script>
-    <script src="MyPage.js" type="text/javascript"></script>
+    <script src="MyPageEdit.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -34,21 +34,30 @@
                         <img id="img" />
                     </div>
                 </div>
+                <div id="findbtn">
+                    <input type="file" id="input_img" />
+                </div>
             </div>
             <div id="main_middle"></div>
             <div class="main_right">
+                <p>닉네임</p>
+                <input type="text" name="name" style="width: 150px;" value="<?php echo $name ?>">
+                <p>아이디</p>
+                <input type="text" name="id" value="<?php echo $id ?>">
+                <p>비밀번호</p>
+                <input type="password" name="password" placeholder="비밀번호를 입력하세요">
+                <p>생년월일</p>
+                <select id="year">
+                    <option>선택하세요</option>
+                </select>년
+                <select id="month">
+                    <option>선택하세요</option>
+                </select>월
+                <select id="day">
+                    <option>선택하세요</option>
+                </select>일
                 <br><br>
-                <p>닉네임 : NAME</p>
-                <p>아이디 : ID</p>
-                <p>생년월일 : YYYY/MM/DD</p>
-                <p>가입날짜 : YYYY/MM/DD</p>
-                <br><br><br>
-                <input type="button" id="edit" value="수정" style="float: right;"
-                    onclick="location.href='MyPageEdit.html'">
-                <br>
-                <input type="button" id="myword" value="내가 만든 단어장" onclick="location.href='Vocabulary.html'">
-                <br>
-                <input type="button" id="mystudy" value="내 공부 기록" onclick="location.href='Calendar.html'">
+                <input type="button" id="save" value="저장" style="float: right;" onclick="location.href='MyPage.php'">
             </div>
         </div>
         <footer>

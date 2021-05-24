@@ -43,6 +43,14 @@ a:active {
     outline-style: none;
 }
 
+.item1 button {
+    border: none !important;
+    background-color: transparent !important;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
 #title::placeholder {
     color: rgb(255, 255, 255);
 }
@@ -202,7 +210,7 @@ ul {
 
 /* 화면 너비 0 ~ 768px */
 @media (max-width : 780px) {
-    .item1 {
+    .item1 button {
         font-size : 18px;
     }
 
@@ -276,3 +284,4 @@ ul {
     outline-style: none;
     border-radius: 10px;
     cursor: pointer;
+}
