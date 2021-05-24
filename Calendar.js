@@ -85,4 +85,3 @@ function buildCalendar() {//현재 달 달력 만들기
       cell.style.border = "3px solid #0f0071"
     }
   }
-}

@@ -7,6 +7,7 @@ var nowts;
 
 
 
+<<<<<<< HEAD
 $(document).ready(function () {
   buttonEvt();
 });
@@ -20,6 +21,21 @@ function showPopup() {
 }
 
 function init() {
+=======
+$(document).ready(function(){
+  buttonEvt();
+});
+
+function showPopup() {
+  var popupWidth = 300;
+  var popupHeight = 300;
+  var popX = (window.screen.width / 2) - (popupWidth / 2);
+  var popY= (window.screen.height / 2) - (popupHeight / 2);
+  window.open("timer_pop.html", "timer_pop", 'status=no, height=' + popupHeight + ', width=' + popupWidth + ', left='+ popX + ', top='+ popY);
+}
+
+function init(){
+>>>>>>> d232689066d9e8e28dc421b818d9987694ea67d7
   document.getElementById("time").innerHTML = "00:00:00";
 }
 
