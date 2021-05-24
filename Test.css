@@ -30,18 +30,13 @@ header {
     align-items: center;
 }
 
-#main {
-    margin: 0px auto;
-    width: 100%;
-  }
-
 #logo {
     margin: 0 auto;
     margin-left: 190px;
     height: 44px;
     width: 159px;
-    background-image: url("image/logo_small.png");
-    background-repeat: no-repeat;
+    background-image: url("image/logo.png");
+    background-repeat : no-repeat;
 }
 
 ul {
@@ -87,7 +82,7 @@ li:active {
 }
 
 /* 화면 너비 0 ~ 2560px */
-@media (max-width:2570px) {
+@media (max-width:2560px) {
     .main_container {
         margin-top: 25vh;
     }
@@ -140,7 +135,7 @@ li:active {
         margin-top: 20vh;
     }
     #main {
-        width: 800px;
+        width: 900px;
         height: 500px;
     }
 
@@ -154,7 +149,7 @@ li:active {
     }
 
     .line {
-        width: 750px;
+        width: 880px;
     }
 
     .text-answer {
@@ -164,7 +159,7 @@ li:active {
     }
 
     .answer {
-        width: 350px;
+        width: 400px;
         height: 100px;
         margin: 0 10px 10px 10px;
     }
@@ -229,7 +224,7 @@ li:active {
 }
 
 /* 화면 너비 0 ~ 768px */
-@media (max-width:780px) {
+@media (max-width:768px) {
     .main_container {
         margin-top: 20vh;
     }
@@ -275,7 +270,7 @@ li:active {
 }
 
 /* 화면 너비 0 ~ 480px */
-@media (max-width : 490px) {
+@media (max-width : 480px) {
     
     #main {
         width: 300px;
