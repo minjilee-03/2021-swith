@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <title>Swith</title>
+    <link rel="stylesheet" href="timer.css" type="text/css"/>
     <title>Swith</title>
     <link rel="stylesheet" href="timer.css" type="text/css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -17,17 +20,19 @@
                 <option>영어</option>
                 <option>수학</option>
             </select>
+
         </header>
         <div id='box' class="box">
             <div id='timerBox' class="timerBox">
                 <div id="time" class="time">00:00:00</div>
                 <hr>
             </div>
-            <div class="btnBox">
-                <i id="startbtn" class="fa fa-play" aria-hidden="true"></i>
-                <i id="pausebtn" class="fa fa-pause" aria-hidden="true"></i>
-                <i id="stopbtn" class="fa fa-stop" aria-hidden="true"></i>
-            </div>
+                <a><i id="startbtn" class="fa fa-play" aria-hidden="true"></i></a>
+                <a><i id="pausebtn" class="fa fa-pause" aria-hidden="true"></i></a>
+                <a><i id="stopbtn" class="fa fa-stop" aria-hidden="true"></i></a>
+                <a><i id="pen"  class="fa fa-calendar edit" aria-hidden="true"></i></a>
+            </div>   
+        <!-- 팝업 될 레이어 -->
         </div>
     </div>
 </body>
